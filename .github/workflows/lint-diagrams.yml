@@ -1,0 +1,166 @@
+name: Lint Diagrams
+
+on:
+  push:
+    paths:
+      - 'docs/**/*.md'
+      - 'README.md'
+  pull_request:
+    paths:
+      - 'docs/**/*.md'
+      - 'README.md'
+
+jobs:
+  lint-mermaid:
+    name: Validate Mermaid Diagrams
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Mermaid CLI
+        run: npm install -g @mermaid-js/mermaid-cli
+
+      - name: Extract and validate Mermaid diagrams
+        run: |
+          set -e
+          FAILED=0
+          DIAGRAM_COUNT=0
+
+          find . -name "*.md" -not -path "./.git/*" | while read -r mdfile; do
+            echo "Checking: $mdfile"
+
+            # Extract mermaid code blocks and validate each one
+            python3 - <<'PYEOF'
+          import sys
+          import re
+          import subprocess
+          import os
+          import tempfile
+
+          mdfile = sys.argv[1] if len(sys.argv) > 1 else None
+          if not mdfile:
+              exit(0)
+
+          with open(mdfile, 'r', encoding='utf-8') as f:
+              content = f.read()
+
+          # Find all mermaid code blocks
+          pattern = r'```mermaid\n(.*?)```'
+          blocks = re.findall(pattern, content, re.DOTALL)
+
+          if not blocks:
+              exit(0)
+
+          print(f"  Found {len(blocks)} Mermaid diagram(s) in {mdfile}")
+          failed = 0
+
+          for i, block in enumerate(blocks):
+              with tempfile.NamedTemporaryFile(mode='w', suffix='.mmd', delete=False) as tmp:
+                  tmp.write(block)
+                  tmp_path = tmp.name
+
+              try:
+                  result = subprocess.run(
+                      ['mmdc', '-i', tmp_path, '-o', '/tmp/out.svg', '--quiet'],
+                      capture_output=True, text=True, timeout=30
+                  )
+                  if result.returncode != 0:
+                      print(f"  ERROR: Diagram {i+1} in {mdfile} failed validation:")
+                      print(f"    {result.stderr.strip()}")
+                      failed += 1
+                  else:
+                      print(f"  OK: Diagram {i+1} passed")
+              except subprocess.TimeoutExpired:
+                  print(f"  TIMEOUT: Diagram {i+1} in {mdfile} timed out")
+                  failed += 1
+              finally:
+                  os.unlink(tmp_path)
+
+          if failed > 0:
+              print(f"  FAILED: {failed} diagram(s) failed in {mdfile}")
+              exit(1)
+          PYEOF
+          done
+
+  lint-markdown:
+    name: Lint Markdown Files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install markdownlint-cli
+        run: npm install -g markdownlint-cli
+
+      - name: Create markdownlint config
+        run: |
+          cat > .markdownlint.json << 'EOF'
+          {
+            "default": true,
+            "MD013": false,
+            "MD033": false,
+            "MD041": false,
+            "MD007": { "indent": 2 },
+            "MD030": false,
+            "MD024": false,
+            "MD036": false
+          }
+          EOF
+
+      - name: Run markdownlint
+        run: markdownlint '**/*.md' --ignore node_modules
+
+  check-links:
+    name: Check Internal Links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check internal document links
+        run: |
+          set -e
+          FAILED=0
+
+          # Check that all linked docs/ files in README exist
+          echo "Checking internal links in README.md..."
+          grep -oP '\[.*?\]\(\./docs/[^)]+\)' README.md | grep -oP '\./docs/[^)]+' | while read -r link; do
+            if [ ! -f "$link" ] && [ ! -f "${link#./}" ]; then
+              echo "BROKEN LINK: $link referenced in README.md does not exist"
+              FAILED=1
+            else
+              echo "OK: $link"
+            fi
+          done
+
+          # Check that all linked docs/ files in docs/ cross-references exist
+          echo "Checking cross-references in docs/..."
+          find docs/ -name "*.md" | while read -r mdfile; do
+            grep -oP '\[.*?\]\(\./[^)]+\.md\)' "$mdfile" 2>/dev/null | grep -oP '\./[^)]+\.md' | while read -r link; do
+              dir=$(dirname "$mdfile")
+              resolved="$dir/$link"
+              if [ ! -f "$resolved" ]; then
+                echo "BROKEN LINK: $link in $mdfile -> $resolved not found"
+                FAILED=1
+              else
+                echo "OK: $resolved"
+              fi
+            done
+          done
+
+          if [ "$FAILED" -ne 0 ]; then
+            echo "Link check failed."
+            exit 1
+          fi
+          echo "All link checks passed."
