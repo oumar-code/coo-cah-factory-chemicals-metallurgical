@@ -98,7 +98,7 @@ All other products follow as capacity and workforce scale through Phase 1.
 
 ### This Factory Supplies (Outbound — Internal Priority First)
 
-```
+```text
 Coo-Cah Garage & Power Electronics Factory
 
         |
@@ -112,7 +112,7 @@ Coo-Cah Garage & Power Electronics Factory
 
 ### This Factory Receives (Inbound)
 
-```
+```text
 Coo-Cah Plastics & Polymers Factory (Agbara, Lagos)
         '--> Plastic enclosures, inverter housings, SCC casings, power strip bodies
              [~60km road; daily delivery; 1-2 day lead time; 7-day safety stock]

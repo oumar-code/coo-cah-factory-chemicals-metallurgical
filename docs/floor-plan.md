@@ -1,15 +1,15 @@
 # Floor Plan & Layout
 
-> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State  
-> **Total Facility Area:** ~12,000 m² (under-roof production + warehousing)  
-> **Site Area:** ~20,000 m² total (includes solar yard, generator, access roads, car park)  
+> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State
+> **Total Facility Area:** ~12,000 m² (under-roof production + warehousing)
+> **Site Area:** ~20,000 m² total (includes solar yard, generator, access roads, car park)
 > **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `factories/electronics/garage-power-electronics/floor-plan.md`
 
 ---
 
 ## 1. Site Overview
 
-```
+```text
 ┌──────────────────────────────────────────────────────────────────────────────────┐
 │                            COO-CAH ELECTRONICS POWER FACTORY SITE                │
 │                             Sagamu Industrial Estate, Ogun State                  │
@@ -47,7 +47,7 @@
 
 ### 2.1 Zone Map (Block Layout, not to scale)
 
-```
+```text
 ┌──────────────────────────────────────────────────────────────────────────────────────┐
 │                          MAIN FACTORY FLOOR (~12,000 m²)                              │
 │   ┌─────────────────────┐  ┌────────────────────────┐  ┌──────────────────────────┐  │

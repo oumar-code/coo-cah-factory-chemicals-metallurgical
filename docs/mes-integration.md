@@ -1,7 +1,7 @@
 # MES Integration
 
-> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State  
-> **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `docs/standards/mes-integration-standards.md`  
+> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State
+> **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `docs/standards/mes-integration-standards.md`
 > **MES Platform:** Group-standard MES (per master repo) — deployed from Day 1
 
 ---
@@ -149,7 +149,7 @@ The Chroma 63800 series load banks (and equivalent models) communicate via **IEE
 
 **Test sequence automation:**
 
-```
+```text
 MES sends to Load Bank via SCPI:
   1. UNIT:SCAN <serial_number>           -- associates test to unit
   2. LOAD:MODE RESISTIVE                 -- set load type

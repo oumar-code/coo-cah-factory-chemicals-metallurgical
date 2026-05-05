@@ -1,8 +1,8 @@
 # CapEx & OpEx Financial Model
 
-> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State  
-> **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks)  
-> **Currency:** Nigerian Naira (₦); USD reference at ₦1,600/USD (Q1 2025)  
+> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State
+> **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks)
+> **Currency:** Nigerian Naira (₦); USD reference at ₦1,600/USD (Q1 2025)
 > **Status:** PLANNED — projections subject to detailed feasibility study
 
 ---
@@ -12,7 +12,7 @@
 ### 1.1 CapEx Summary by Category
 
 | Category | ₦ Million | USD Equivalent | Notes |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Land acquisition and site preparation | 180 | $112,500 | Sagamu Industrial Estate; ~20,000 m² |
 | Civil works & building construction | 1,200 | $750,000 | 12,000 m² steel frame + concrete; 18 months construction |
 | SMT PCB assembly line | 520 | $325,000 | Paste printer, P&P ×2, reflow, wave, AOI, SPI, ICT, depaneller |
@@ -38,7 +38,7 @@
 ### 1.2 CapEx Phasing
 
 | Period | CapEx | Key Spend |
-|---|---|---|
+| --- | --- | --- |
 | Q2–Q4 2025 | ₦500M | Land, site prep, NESREA EIA, architectural design, SMT equipment order |
 | Q1–Q2 2026 | ₦1,800M | Main building construction, solar/BESS civil, electrical backbone |
 | Q3–Q4 2026 | ₦1,500M | Equipment installation (SMT, test, assembly), solar commissioning, MES deployment |
@@ -50,7 +50,7 @@
 ## 2. Phase 2 & Phase 3 CapEx (Indicative)
 
 | Phase | Period | Indicative CapEx | Key Investments |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Phase 2 | 2027–2028 | ₦1,800M (~$1.1M) | CNC winding machines ×4; AI Vision upgrade; digital twin platform; additional test stations |
 | Phase 3 | 2029–2031 | ₦2,500M (~$1.6M) | Lights-out line robotics (power strips + UPS); AI diagnostics platform; capacity expansion |
 | **Total Phases 1–3** | 2025–2031 | **₦8,846M (~$5.5M)** | Full 700k inverter + 1.5M power strip annual capacity |
@@ -62,7 +62,7 @@
 ### 3.1 Annual OpEx Breakdown
 
 | Category | ₦ Million/year | % of Revenue | Notes |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Direct materials (BOM cost) | 3,200 | 53.3% | Phase 1 mix at planned production volumes |
 | Direct labour (280 direct employees) | 420 | 7.0% | Average ₦1.5M/year per direct employee |
 | Indirect labour (60 indirect) | 72 | 1.2% | Security, logistics, facility management |
@@ -83,7 +83,7 @@
 ### 3.2 Revenue Assumption (Phase 1 Year 1 Full-Run)
 
 | Product | Volume (units/year) | Average Selling Price | Revenue |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | CCG-INV-PSW 2kVA | 50,000 | ₦42,000 | ₦2,100M |
 | CCG-INV-PSW 3kVA | 40,000 | ₦62,000 | ₦2,480M |
 | CCG-INV-PSW 5kVA | 15,000 | ₦98,000 | ₦1,470M |
@@ -106,7 +106,7 @@
 ### 4.1 CCG-INV-PSW 2kVA Pure Sine Wave Inverter
 
 | BOM Item | Source | Unit Cost (₦) | Notes |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Power MOSFETs (8×) | Infineon via Arrow (import) | 3,200 | 4 × IPP60R080CFD7 H-bridge; 4 × for charger circuit |
 | Gate Driver ICs (4×) | Texas Instruments via Mouser | 800 | UCC27714 or IR2110 |
 | DSP microcontroller | Microchip dsPIC33 (import) | 1,800 | Main control; firmware-flashed |
@@ -133,7 +133,7 @@
 ### 4.2 CCG-SCC-MPPT 40A Solar Charge Controller
 
 | Cost Item | Unit Cost (₦) |
-|---|---|
+| --- | --- |
 | MOSFET switching array (synchronous rectification) | 1,400 |
 | PWM/MPPT controller IC | 900 |
 | Inductor (boost/buck) | 650 |
@@ -156,7 +156,7 @@
 ### 5.1 Simple Payback on Phase 1 CapEx
 
 | Year | Revenue (₦M) | EBITDA (₦M) | Cumulative Cash Flow (₦M) |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 2026 (partial, ramp) | 1,800 | -200 (startup losses, ramp) | -4,746 |
 | 2027 (ramp year 1) | 5,500 | 680 | -4,066 |
 | 2028 (ramp year 2) | 8,200 | 1,200 | -2,866 |
@@ -169,7 +169,7 @@
 ### 5.2 5-Year NPV (10% discount rate, Phase 1 CapEx basis)
 
 | Metric | Value |
-|---|---|
+| --- | --- |
 | Total Phase 1 CapEx | ₦4,546M |
 | Cumulative EBITDA years 2027–2031 | ~₦10,580M |
 | NPV of EBITDA (10% discount, 5 years from 2027) | ~₦7,900M |
@@ -183,7 +183,7 @@
 ## 6. Key Financial Assumptions and Sensitivities
 
 | Assumption | Base Case | Downside | Upside |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Naira/USD rate | ₦1,600/$ | ₦2,200/$ (import costs rise) | ₦1,200/$ (import costs fall) |
 | Semiconductor cost inflation | 0%/year | +15%/year (allocation shortage) | -5%/year |
 | Production ramp-up | 30% Year 1; 65% Year 2; 100% Year 3 | 20% Year 1; 50% Year 2 | 40% Year 1; 80% Year 2 |

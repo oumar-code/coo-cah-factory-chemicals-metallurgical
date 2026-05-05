@@ -1,6 +1,6 @@
 # Energy Profile
 
-> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State  
+> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State
 > **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `docs/standards/energy-strategy.md`
 
 ---
@@ -53,7 +53,7 @@ Solar irradiance data for Sagamu / Ogun State:
 | Solar/BESS Inverter Losses | Auxiliary power for solar inverters, BESS, ATS | 15 | 1.00 | 15 |
 | **Total** | | **415 kW** | | **~265 kW average / ~400 kW peak** |
 
-**Estimated peak demand:** ~400 kW (all zones simultaneously at maximum demand during peak production shift)  
+**Estimated peak demand:** ~400 kW (all zones simultaneously at maximum demand during peak production shift)
 **Estimated average running load:** ~265 kW (weighted average across production hours)
 
 ### 2.2 Daily Energy Consumption
@@ -190,8 +190,8 @@ flowchart TD
     M -- YES --> N[Solar charges BESS + reduces grid import]
 ```
 
-**Priority order:** Solar+BESS → Grid → Generator  
-**Transfer time:** <20ms (solar+BESS); <15 seconds (generator)  
+**Priority order:** Solar+BESS → Grid → Generator
+**Transfer time:** <20ms (solar+BESS); <15 seconds (generator)
 **SMT line impact:** Zero interruption on solar+BESS switch. Generator transfer requires reflow oven soft-restart (automatic; 90-second oven recovery before new boards enter).
 
 ---

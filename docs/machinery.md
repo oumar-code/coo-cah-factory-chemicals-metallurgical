@@ -1,7 +1,7 @@
 # Machinery & Equipment Register
 
-> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State  
-> **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `factories/electronics/garage-power-electronics/machinery.md`  
+> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State
+> **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `factories/electronics/garage-power-electronics/machinery.md`
 > **Status:** PLANNED — Phase 1 equipment list; Phase 2 additions noted where applicable.
 
 ---
@@ -25,7 +25,7 @@ The SMT line produces all inverter control boards, MPPT/PWM solar charge control
 | 1.11 | SMT Component Storage Tower | Mycronic MX Tower or equivalent | 2 | Smart reel storage; MES-integrated; humidity-controlled | SMT Zone |
 | 1.12 | Nitrogen Generator | Parker domnick hunter (4 Nm³/h) | 1 | 99.999% N₂ purity; supplies reflow oven and wave solder | Utilities |
 
-**SMT line throughput target (Phase 1):** Up to 800 PCB panels/shift on a mixed-product schedule.  
+**SMT line throughput target (Phase 1):** Up to 800 PCB panels/shift on a mixed-product schedule.
 **ESD protocol:** Full ESD-controlled floor from tape-cutting to finished board store — wrist straps, ESD flooring, ionisers.
 
 ---

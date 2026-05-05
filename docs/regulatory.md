@@ -1,6 +1,6 @@
 # Regulatory & Certification
 
-> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State  
+> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State
 > **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `docs/standards/iso-requirements.md`
 
 ---
