@@ -11,7 +11,7 @@
 The SMT line produces all inverter control boards, MPPT/PWM solar charge controller boards, UPS control cards, power strip PCBs, and smart power strip Wi-Fi modules in-house. Phase 1 runs a single shift with capacity for a second shift as volume scales.
 
 | # | Equipment | Make / Model (or Equivalent) | Qty | Key Specification | Zone |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 1.1 | Solder Paste Printer (SPI-integrated) | DEK Horizon 03iX or Ekra X5 | 1 | ±15 µm print accuracy; auto-PCB alignment; inline SPI | SMT Zone |
 | 1.2 | Solder Paste Inspection (SPI) | Koh Young KRIA 3D or Viscom S3088 | 1 | 100% inline 3D paste height inspection | SMT Zone |
 | 1.3 | Pick-and-Place Machine — High Speed | Fuji NXT III or Juki RX-7R | 1 | Up to 72,000 cph; 01005–55mm² components | SMT Zone |
@@ -35,7 +35,7 @@ The SMT line produces all inverter control boards, MPPT/PWM solar charge control
 > **Critical note:** Transformer and inductor winding is the **most labour-intensive and precision-demanding manufacturing operation** in this factory. Every inverter, UPS, and solar charge controller contains at least one custom-wound magnetic component. Phase 1 is entirely manual winding with jigs and fixtures. Phase 2 deploys CNC winding machines — the single biggest productivity improvement in the factory.
 
 | # | Equipment | Make / Model (or Equivalent) | Qty | Key Specification | Zone |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 2.1 | Toroidal Core Winding Machine | ACME HW-800 or Jovil Universal Coil Winder | 2 | Manual-assist toroidal winder; 0–200 RPM; torque control; guides 0.1–4.0mm wire | Winding Cell |
 | 2.2 | EI/ETD Core Bobbin Winding Machine | Gorman Machine Corp BW-6 or Aotewell BW-2000 | 2 | Bobbin winder with layer counter; traversing guide; 0.05–6.0mm wire | Winding Cell |
 | 2.3 | Heavy-Gauge Bobbin Winder (power transformer) | Acme BW-1200 or equivalent | 4 | For high-current primary windings; 1.0–10.0mm wire; torque tension control | Winding Cell |
@@ -55,7 +55,7 @@ The SMT line produces all inverter control boards, MPPT/PWM solar charge control
 Each inverter assembly station is a balanced-flow line with conveyor linking 8 stations. MES tracks WIP at every station. Every unit receives a unique serial number at Station 1 that follows the unit to despatch.
 
 | # | Station | Equipment / Tooling | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 3.1 | Chassis Prep | Pneumatic press, drill press, nibbling tool | Aluminium/steel chassis punching, gland holes, ventilation slots |
 | 3.2 | PCB Mount & Harness | Anti-static assembly bench, torque screwdrivers (Raimondi), cable-form jigs | Mount control PCB, power PCB, gate driver board; route internal harness |
 | 3.3 | Transformer Integration | Gantry lift (max 25kg), anti-vibration mounts, torque wrenches | Install toroidal/EI transformer; secure with anti-vibration bushings |
@@ -76,7 +76,7 @@ Each inverter assembly station is a balanced-flow line with conveyor linking 8 s
 > **Policy (non-negotiable):** Every inverter, UPS, solar charge controller, and battery charger produced in this factory is **100% tested on load banks before packaging**. No unit ships untested. This is the core quality guarantee and warranty foundation.
 
 | # | Equipment | Make / Model | Qty | Specification | Purpose |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 4.1 | Programmable AC Load Bank | Chroma 63800 Series or NH Research 4600 | 6 | 0–5 kVA; resistive + inductive + capacitive; PF 0–1; THD analysis | Inverter full-load testing |
 | 4.2 | DC Electronic Load (battery simulator) | Chroma 63200A or BK Precision 8616 | 6 | 0–150V, 0–120A, 1800W; CC/CV/CR/CP modes | Simulate battery for inverter DC input testing |
 | 4.3 | Power Quality Analyser | Fluke 435-II or Hioki PW3390 | 4 | 4-channel; THD-I/V; harmonics to 50th; true RMS; EN 50160 | Verify sine wave quality; THD-V <3% (PSW requirement) |
@@ -98,7 +98,7 @@ Each inverter assembly station is a balanced-flow line with conveyor linking 8 s
 Power tools (drills, angle grinders, circular saws) are assembled on a dedicated line separated from the electronics area to isolate metal swarf.
 
 | # | Equipment | Qty | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 5.1 | Press-fit Station (motor + gearbox) | 2 | Hydraulic press, 10-tonne; press-fit armature into gear housing |
 | 5.2 | Torque Assembly Station | 4 | Pneumatic torque screwdrivers; all fasteners torqued to drawing spec |
 | 5.3 | Brush & Commutator Inspection Bench | 2 | Optical magnification; commutator run-out gauge (max 0.05mm TIR) |
@@ -113,7 +113,7 @@ Power tools (drills, angle grinders, circular saws) are assembled on a dedicated
 ## 6. Cable & Wire Processing
 
 | # | Equipment | Make / Model | Qty | Specification |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | 6.1 | Automatic Wire Cutting & Stripping Machine | Schleuniger EcoStrip 9380 or Komax Zeta 645 | 2 | 0.5–35mm²; strip length ±0.5mm; up to 6,000 cuts/h |
 | 6.2 | Hydraulic Ferrule / Lug Crimper | Klauke EP20 or BURNDY PAT32 | 2 | 0.5–120mm² crimps; go/no-go pull test |
 | 6.3 | Cable Harness Board | Custom (plywood form-board with pins) | 6 | Per-model harness form-boards; cables routed and clipped before installation |
@@ -125,7 +125,7 @@ Power tools (drills, angle grinders, circular saws) are assembled on a dedicated
 ## 7. AMR Fleet — Autonomous Mobile Robots
 
 | Attribute | Value |
-|---|---|
+| --- | --- |
 | Fleet Size | 12 units (Phase 1) |
 | Platform | Geek+ P40 Series or equivalent (1,000 kg payload per unit) |
 | Function | Kitting delivery to assembly stations; WIP transport between zones; empty carton return; raw material replenishment |
@@ -139,7 +139,7 @@ Power tools (drills, angle grinders, circular saws) are assembled on a dedicated
 ## 8. Packaging Line
 
 | # | Equipment | Qty | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 8.1 | Carton Erector (automatic) | 1 | Forms flat-pack cartons; output 600 cartons/h |
 | 8.2 | Foam-in-Place / Die-Cut Foam Insert Machine | 1 | Custom foam inserts for inverter and UPS models; protects during transport |
 | 8.3 | Weigh-Check Scale | 2 | Inline checkweigher; verifies all accessories present; ±5g accuracy |
@@ -153,7 +153,7 @@ Power tools (drills, angle grinders, circular saws) are assembled on a dedicated
 ## 9. Energy Systems Equipment
 
 | # | Equipment | Make / Model | Qty | Specification | Location |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 9.1 | Ground-Mount Solar PV Array | Longi Hi-MO 6 or Canadian Solar HiHero (600W panels) | ~1,000 panels | 600 kWp total; bifacial panels; ground-mount steel frame | Solar Yard (east of building) |
 | 9.2 | Solar Inverter / String Inverter | Huawei SUN2000-100KTL or SMA Tripower Core1 110 kW | 6 | 100kW per unit; 600V–1100V MPPT range | Inverter Room |
 | 9.3 | Battery Energy Storage System (BESS) | CATL EnerC or BYD BBox Pro 300kWh (×3 units) | 3 units (=700kWh) | 700 kWh total LFP; containerised; BMS; 0.5C discharge rate | BESS Pad (outdoor, shaded) |

@@ -10,6 +10,7 @@
 ### 1.1 The Critical Risk: Semiconductor Allocation
 
 Power electronics manufacturing depends on power semiconductors (MOSFETs, IGBTs, gate driver ICs) that are:
+
 - **Manufactured by a small number of global fabs** (Infineon in Germany, ON Semiconductor in US/Malaysia, TI in US/Philippines)
 - **Subject to allocation** during demand spikes — automotive and industrial customers receive priority allocations; SMEs and new entrants are cut first
 - **Long-lead-time items** — standard lead times 16–26 weeks; allocation periods have seen 52+ week lead times
@@ -20,7 +21,7 @@ For the Coo-Cah Electronics Power Factory, a semiconductor stockout means **prod
 ### 1.2 Semiconductor Procurement Policy
 
 | Element | Policy |
-|---|---|
+| --- | --- |
 | **Safety stock — minimum** | 90 days production equivalent at planned Phase 1 run rate |
 | **Safety stock — target** | 120 days (extended during global allocation events) |
 | **Ordering frequency** | Monthly rolling forecast; purchase orders placed minimum 26 weeks forward |
@@ -33,6 +34,7 @@ For the Coo-Cah Electronics Power Factory, a semiconductor stockout means **prod
 ### 1.3 Why 90 Days? The Infineon/TI Allocation Case
 
 During the 2020–2023 global semiconductor shortage:
+
 - Infineon IPP60R080CFD7 (power MOSFET used in inverters) lead time extended from 16 weeks to 52+ weeks
 - Customers without allocation agreements were completely cut off
 - Factories holding <30 days stock were forced to halt production for months
@@ -43,7 +45,7 @@ During the 2020–2023 global semiconductor shortage:
 ### 1.4 Critical Semiconductor Register
 
 | Component | Specification | Primary Source | Alternate Source | Safety Stock | Transport |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | Power MOSFET (inverter H-bridge) | Infineon IPP60R080CFD7 or equivalent (600V, 24A, TO-247) | Infineon via Arrow | ON Semiconductor NTHL160N65S3 via Avnet | 90 days | Air freight only |
 | Power MOSFET (SCC high-side) | Infineon BSC093N15NS5 or equivalent (150V, 80A) | Infineon via Arrow | Vishay SiR622DP via Mouser | 90 days | Air freight only |
 | IGBT module (3kVA+ inverters) | Infineon FS25R12W1T7 or equivalent (1200V, 25A) | Infineon via Avnet | Fuji Electric FGA25N120ANTDTU via Arrow | 90 days | Air freight only |
@@ -60,7 +62,7 @@ During the 2020–2023 global semiconductor shortage:
 ### 2.1 Phase 1 — Import from China
 
 | Parameter | Details |
-|---|---|
+| --- | --- |
 | Primary supplier | Baoding Tianwei Group or Zhejiang Boway Alloy — silicon steel laminations (EI/ETD cores) |
 | Toroidal cores | VACUUMSCHMELZE (Germany) for high-performance grades; Ningbo SUMWAY (China) for standard grades |
 | Port of entry | Tin Can Island Port, Apapa, Lagos (sea freight) |
@@ -72,7 +74,7 @@ During the 2020–2023 global semiconductor shortage:
 ### 2.2 Phase 2 — Localisation Path
 
 | Option | Feasibility | Timeline |
-|---|---|---|
+| --- | --- | --- |
 | Coo-Cah Metallurgical Factory — silicon steel rolling | HIGH feasibility if Coo-Cah Metallurgical achieves ISO grade silicon steel capability | 2027–2028 evaluation |
 | Nigerian local steel laminators (e.g., Delta Steel) | LOW — current Nigerian steel production does not meet electrical-grade Si-steel specifications | Long-term (Phase 3+) |
 | Partial localisation: import grain-oriented Si-steel strip; laminate in-house | MEDIUM — adds slitting and lamination stamping equipment (~$2M CapEx) | Phase 2 investigation |
@@ -86,7 +88,7 @@ During the 2020–2023 global semiconductor shortage:
 Magnet wire is used in transformer and inductor winding. It is consumed in large quantities and is a commodity input.
 
 | Supplier | Location | Grades | Delivery Mode | Safety Stock |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Kabelmetal Nigeria Ltd | Lagos, Nigeria | AWG 20–40 (0.08mm–0.8mm); Class F insulation | Truck delivery from Lagos; 1–2 day lead time | 21 days (local supplier; reliable) |
 | Nigerian Wire & Cable | Lagos, Nigeria | AWG 16–30 (0.25mm–1.6mm); Class H heavy-gauge | Truck delivery | 21 days |
 | Apar Industries (India) | India (via sea import) | Specialist gauges — ultra-fine (AWG 38–42) and heavy (AWG 12–16) | Sea freight; 3–4 weeks | 45 days |
@@ -101,7 +103,7 @@ Magnet wire is used in transformer and inductor winding. It is consumed in large
 Electrolytic capacitors are critical components in inverter DC bus, filter stages, and UPS circuits. Quality capacitors (105°C, 3,000h+ rated) are mandatory for 2-year warranty reliability.
 
 | Specification | Supplier | Transport | Safety Stock |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | High-ripple 105°C, 1,000V (inverter DC bus) | Nichicon HE/HXW series — Japan | Air freight | 45 days |
 | Standard 105°C, 400V (general filter) | Rubycon YXJ series — Japan | Air/Sea mixed | 45 days |
 | High-temp 125°C (near-transformer positions) | Cornell Dubilier (USA) or Kemet | Air freight | 45 days |
@@ -114,12 +116,12 @@ Electrolytic capacitors are critical components in inverter DC bus, filter stage
 ## 5. PCB Bare Boards
 
 | Phase | Strategy |
-|---|---|
+| --- | --- |
 | Phase 1 | In-house SMT line produces all PCBs from imported bare boards. Raw boards imported from China/Taiwan via LCL sea freight (4–6 weeks). Board specifications: 2-layer standard through Phase 1; some 4-layer for main control board. |
 | Phase 2 | Complex multi-layer boards (6-layer main inverter DSP board) consolidated to Coo-Cah Personal Electronics SMT line (if available and capacity allows). |
 
 | Board Type | Source | Quantity/Year (Phase 1) | Lead Time | Safety Stock |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | 2-layer FR4 (SCC, power strip, small boards) | JLC PCB or Gold Circuit Electronics (China) via sea freight | ~200,000 panels | 4–6 weeks (sea) | 30 days |
 | 4-layer FR4 (inverter control, UPS control) | WUS Printed Circuit (China) via sea freight | ~60,000 panels | 5–7 weeks | 35 days |
 | 6-layer FR4 (main inverter DSP board — Phase 2) | Tripod Technology (Taiwan) or TTM Technologies | ~25,000 panels | 6–8 weeks | 40 days |
@@ -131,7 +133,7 @@ Electrolytic capacitors are critical components in inverter DC bus, filter stage
 > **The Coo-Cah Plastics & Polymers Factory (Agbara, Lagos) is the Tier A supplier for all plastic enclosures.** This is a strategic intra-group relationship — not a commercial procurement. It drives cost synergies, guarantees quality consistency, and eliminates import dependency on enclosures.
 
 | Component | Specification | Annual Volume (Phase 1) | Lead Time | Safety Stock |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Inverter housing (2kVA, 3kVA) | ABS+PC alloy; flame-rated UL94 V-0; IP21; colour: charcoal grey RAL 7016 | ~120,000 sets | 1–2 days (intra-group) | 7 days |
 | Inverter housing (5kVA) | ABS+PC; IP21; larger chassis form; RAL 7016 | ~40,000 sets | 1–2 days | 7 days |
 | SCC housing (MPPT/PWM all sizes) | ABS; IP32; deep-section PCB housing; black RAL 9005 | ~150,000 sets | 1–2 days | 7 days |
@@ -151,7 +153,7 @@ Electrolytic capacitors are critical components in inverter DC bus, filter stage
 UPS units contain VRLA (Valve-Regulated Lead-Acid) sealed batteries which are classified as **Dangerous Goods — Class 8 (Corrosive) under IMDG regulations for sea freight.**
 
 | Parameter | Requirement |
-|---|---|
+| --- | --- |
 | Battery type | VRLA/SLA — sealed, non-spillable (meets IMDG Special Provision 238) |
 | Primary supplier | CSB Battery Co. (Taiwan) — CSB GP series or HR series (high-rate UPS) |
 | Alternate supplier | Vision Battery (Hong Kong) — CP series |
@@ -168,7 +170,7 @@ UPS units contain VRLA (Valve-Regulated Lead-Acid) sealed batteries which are cl
 ## 8. Safety Stock Policy Summary
 
 | Component Category | Safety Stock | Reorder Point | Transport Mode |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Power MOSFETs / IGBTs | 90 days | 60 days | Air freight mandatory |
 | Gate Driver ICs / DSP | 90 days | 60 days | Air freight mandatory |
 | Wi-Fi SoC (ESP32) | 60 days | 45 days | Air freight |
@@ -189,7 +191,7 @@ UPS units contain VRLA (Valve-Regulated Lead-Acid) sealed batteries which are cl
 Once Phase 1 internal supply targets are met, all sister factory demands are fulfilled before external commercial sales commence.
 
 | Product | Recipient | Quantity (Phase 1, Year 1) | Priority |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | CCG-INV-PSW 3kVA | All Coo-Cah factories (1–2 units per factory; ~15 factories) | ~30 units | CRITICAL — before external sale |
 | CCG-INV-PSW 5kVA | Large Coo-Cah factories (chemical, metallurgical) | ~20 units | CRITICAL |
 | CCG-UPS 1kVA (rack) | MES server rooms at every factory | ~15 units | CRITICAL |
@@ -208,7 +210,7 @@ Once Phase 1 internal supply targets are met, all sister factory demands are ful
 ### 10.1 Nigeria Inverter + Solar Market Sizing
 
 | Market Metric | Value | Source |
-|---|---|---|
+| --- | --- | --- |
 | Nigeria inverter market size | >2 million units/year | Industry estimates (2024) |
 | Market growth rate | 15–20%/year | Driven by grid deterioration |
 | Estimated market value (at ₦150k average unit price) | ~₦300 billion/year (~$188M/year) | Calculated |
@@ -218,7 +220,7 @@ Once Phase 1 internal supply targets are met, all sister factory demands are ful
 ### 10.2 Competitive Positioning
 
 | Factor | Imported (Chinese OEM) | Coo-Cah (Local) |
-|---|---|---|
+| --- | --- | --- |
 | Price | Low–Medium | Medium (5–15% premium) |
 | Warranty | 12 months; return-to-importer (Lagos distributor) | **24 months; factory-direct aftersales (Sagamu)** |
 | Availability of spares | Slow; import-dependent | **Fast; on-site spare parts; 48h repair SLA** |
@@ -229,7 +231,7 @@ Once Phase 1 internal supply targets are met, all sister factory demands are ful
 ### 10.3 Distribution Strategy
 
 | Channel | Phase 1 Focus | Phase 2 Expansion |
-|---|---|---|
+| --- | --- | --- |
 | Direct B2B (large corporates, hotels, hospitals) | YES — high-value units (3kVA, 5kVA, UPS) | Expand to state governments, military |
 | Solar installers / EPC contractors | YES — SCC, solar kits | Certified Coo-Cah Installer programme |
 | Electrical wholesale distributors | YES — Lagos, Abuja, PH, Kano | Expand to Enugu, Kaduna, Ibadan |
