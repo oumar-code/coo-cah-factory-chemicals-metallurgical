@@ -10,10 +10,15 @@ on:
       - 'docs/**/*.md'
       - 'README.md'
 
+permissions:
+  contents: read
+
 jobs:
   lint-mermaid:
     name: Validate Mermaid Diagrams
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -91,6 +96,8 @@ jobs:
   lint-markdown:
     name: Lint Markdown Files
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -124,6 +131,8 @@ jobs:
   check-links:
     name: Check Internal Links
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
