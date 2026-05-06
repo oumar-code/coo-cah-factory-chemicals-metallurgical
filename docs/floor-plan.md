@@ -1,15 +1,25 @@
 # Floor Plan & Layout
 
+<<<<<<< copilot/create-factory-repository
+> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State  
+> **Total Facility Area:** ~12,000 m² (under-roof production + warehousing)  
+> **Site Area:** ~20,000 m² total (includes solar yard, generator, access roads, car park)  
+=======
 > **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State
 > **Total Facility Area:** ~12,000 m² (under-roof production + warehousing)
 > **Site Area:** ~20,000 m² total (includes solar yard, generator, access roads, car park)
+>>>>>>> main
 > **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `factories/electronics/garage-power-electronics/floor-plan.md`
 
 ---
 
 ## 1. Site Overview
 
+<<<<<<< copilot/create-factory-repository
+```
+=======
 ```text
+>>>>>>> main
 ┌──────────────────────────────────────────────────────────────────────────────────┐
 │                            COO-CAH ELECTRONICS POWER FACTORY SITE                │
 │                             Sagamu Industrial Estate, Ogun State                  │
@@ -47,7 +57,11 @@
 
 ### 2.1 Zone Map (Block Layout, not to scale)
 
+<<<<<<< copilot/create-factory-repository
+```
+=======
 ```text
+>>>>>>> main
 ┌──────────────────────────────────────────────────────────────────────────────────────┐
 │                          MAIN FACTORY FLOOR (~12,000 m²)                              │
 │   ┌─────────────────────┐  ┌────────────────────────┐  ┌──────────────────────────┐  │
@@ -110,7 +124,11 @@
 ## 3. Zone Area Summary
 
 | Zone | Description | Area (m²) | Key Features |
+<<<<<<< copilot/create-factory-repository
+|---|---|---|---|
+=======
 | --- | --- | --- | --- |
+>>>>>>> main
 | A | Raw Material Warehouse | 1,200 | ESD-controlled; humidity/temperature controlled; semiconductor cage; DG battery cage |
 | B | SMT PCB Assembly Line | 1,000 | Full ESD floor; cleanroom-light (ISO Class 8 equivalent); positive pressure |
 | C | Transformer & Inductor Winding Cell | 800 | Segregated for wire dust; varnish fume extraction; high-ceiling for oven stack |
@@ -152,7 +170,11 @@ AMR pathways are marked with virtual lanes (LiDAR map); pedestrian crossing zone
 ## 5. Solar Yard — Ground-Mount Array
 
 | Parameter | Value |
+<<<<<<< copilot/create-factory-repository
+|---|---|
+=======
 | --- | --- |
+>>>>>>> main
 | Location | East side of main building |
 | Area | ~4,200 m² (array footprint including paths) |
 | Orientation | South-facing; 10° tilt |
@@ -169,7 +191,11 @@ AMR pathways are marked with virtual lanes (LiDAR map); pedestrian crossing zone
 ## 6. BESS Pad
 
 | Parameter | Value |
+<<<<<<< copilot/create-factory-repository
+|---|---|
+=======
 | --- | --- |
+>>>>>>> main
 | Location | South-west corner of site (adjacent to main LV room) |
 | Area | ~150 m² concrete pad |
 | Units | 3 × containerised BESS (~233 kWh each) |
@@ -185,7 +211,11 @@ AMR pathways are marked with virtual lanes (LiDAR map); pedestrian crossing zone
 ## 7. Building Services Summary
 
 | Service | Specification |
+<<<<<<< copilot/create-factory-repository
+|---|---|
+=======
 | --- | --- |
+>>>>>>> main
 | Structure | Steel portal frame; concrete floor slab; insulated profile metal roof + walls |
 | Eaves Height | 8m (allows 6m racking in Zone I and forklift clearance) |
 | Floor Loading | 10 kN/m² production zones; 15 kN/m² warehouse zones |

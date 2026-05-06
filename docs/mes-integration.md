@@ -1,7 +1,12 @@
 # MES Integration
 
+<<<<<<< copilot/create-factory-repository
+> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State  
+> **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `docs/standards/mes-integration-standards.md`  
+=======
 > **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State
 > **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `docs/standards/mes-integration-standards.md`
+>>>>>>> main
 > **MES Platform:** Group-standard MES (per master repo) — deployed from Day 1
 
 ---
@@ -57,7 +62,11 @@ flowchart TD
 ### 2.1 Serial Number Format
 
 | Field | Format | Example |
+<<<<<<< copilot/create-factory-repository
+|---|---|---|
+=======
 | --- | --- | --- |
+>>>>>>> main
 | Factory prefix | CCG-EP (Coo-Cah Garage — Electronics Power) | CCG-EP |
 | Product family | 3–4 char SKU abbreviation | INV-PSW |
 | Power rating / size | Numeric | 2K |
@@ -68,7 +77,10 @@ flowchart TD
 ### 2.2 Serial Number Assignment and MES Linkage
 
 Serial numbers are assigned by the MES at the moment a unit enters the assembly line. The number is:
+<<<<<<< copilot/create-factory-repository
+=======
 
+>>>>>>> main
 - Linked to the **production work order** (which product, which batch)
 - Linked to **all BOM component lot numbers** (which reel of MOSFETs, which transformer core batch, which enclosure batch)
 - Linked to **the PCB assembly record** (which SMT panel, which AOI/ICT result)
@@ -85,7 +97,11 @@ Serial numbers are assigned by the MES at the moment a unit enters the assembly 
 Every CCG product has a QR code on the rear label and on the outer carton. Scanning the QR code directs to the Coo-Cah warranty portal showing:
 
 | Information | Visible to Customer | Visible to Coo-Cah Service Team |
+<<<<<<< copilot/create-factory-repository
+|---|---|---|
+=======
 | --- | --- | --- |
+>>>>>>> main
 | Product model and rating | ✅ | ✅ |
 | Serial number | ✅ | ✅ |
 | Date of manufacture | ✅ | ✅ |
@@ -102,7 +118,10 @@ Every CCG product has a QR code on the rear label and on the outer carton. Scann
 ### 3.1 Why IEC 62040 Test Records Must Live in MES
 
 For SON NIS certification and ISO 9001:2015 compliance, every inverter and UPS unit must have a documented test record proving it met IEC 62040 safety and performance requirements before leaving the factory. Paper test records are:
+<<<<<<< copilot/create-factory-repository
+=======
 
+>>>>>>> main
 - Prone to loss
 - Not searchable for warranty claims
 - Not auditable by SON without factory visit
@@ -113,7 +132,11 @@ For SON NIS certification and ISO 9001:2015 compliance, every inverter and UPS u
 ### 3.2 Mandatory Test Parameters Stored (Inverter / UPS per IEC 62040)
 
 | Test Parameter | Standard Reference | Pass Criterion | Stored in MES? |
+<<<<<<< copilot/create-factory-repository
+|---|---|---|---|
+=======
 | --- | --- | --- | --- |
+>>>>>>> main
 | AC output voltage at full load | IEC 62040-3 | 230V ±5% (218–242V) | ✅ |
 | AC output frequency | IEC 62040-3 | 50Hz ±0.5Hz | ✅ |
 | THD-V at full load (pure sine wave) | IEC 62040-2 / NIS 411 | < 3% THD-V | ✅ |
@@ -134,7 +157,11 @@ For SON NIS certification and ISO 9001:2015 compliance, every inverter and UPS u
 ### 3.3 Test Record Retention Policy
 
 | Retention Period | Reason |
+<<<<<<< copilot/create-factory-repository
+|---|---|
+=======
 | --- | --- |
+>>>>>>> main
 | **10 years minimum** (after unit despatch) | Warranty period (2 years) + potential product liability claims (8 years additional) |
 | Backup policy | MES database backed up daily to cloud storage; 90-day local backup + 10-year cloud archive |
 | SON audit access | SON-authorised personnel can request read access to test records portal for certification audits |
@@ -149,7 +176,11 @@ The Chroma 63800 series load banks (and equivalent models) communicate via **IEE
 
 **Test sequence automation:**
 
+<<<<<<< copilot/create-factory-repository
+```
+=======
 ```text
+>>>>>>> main
 MES sends to Load Bank via SCPI:
   1. UNIT:SCAN <serial_number>           -- associates test to unit
   2. LOAD:MODE RESISTIVE                 -- set load type
@@ -200,7 +231,11 @@ Each product label is printed by the Zebra ZT411 label printer at the packaging 
 **Label fields populated from MES (per unit):**
 
 | Label Field | Source |
+<<<<<<< copilot/create-factory-repository
+|---|---|
+=======
 | --- | --- |
+>>>>>>> main
 | Product name (e.g., "Pure Sine Wave Inverter 2kVA") | MES product master |
 | SKU code (CCG-INV-PSW-2K) | MES product master |
 | Serial number (text + Code 128 barcode) | MES serial number |
@@ -220,7 +255,10 @@ Each product label is printed by the Zebra ZT411 label printer at the packaging 
 ### 5.2 Label Print Control
 
 **Poka-yoke:** The MES will only generate a print job for a SON label if:
+<<<<<<< copilot/create-factory-repository
+=======
 
+>>>>>>> main
 1. The unit's serial number has a **PASS** load bank test record in the database
 2. The unit's serial number has a **completed** firmware flash record
 3. The current NIS certificate is **valid** (not expired) for this product
@@ -232,7 +270,11 @@ If any condition is not met, MES blocks the label print and raises an alert. Thi
 ## 6. MES Modules Summary
 
 | MES Module | Key Functions | Priority |
+<<<<<<< copilot/create-factory-repository
+|---|---|---|
+=======
 | --- | --- | --- |
+>>>>>>> main
 | Production Planning | Work orders; BOM explosion; capacity planning; shift scheduling | Phase 1 Day 1 |
 | Inventory Management | GRN; FIFO; lot tracking; expiry alerts; safety stock alerts | Phase 1 Day 1 |
 | Shop Floor Control | Station traveller cards; operator login; time recording; WIP tracking | Phase 1 Day 1 |

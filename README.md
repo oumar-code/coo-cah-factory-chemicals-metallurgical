@@ -15,7 +15,11 @@
 ## Factory Overview
 
 | Attribute | Value |
+<<<<<<< copilot/create-factory-repository
+|---|---|
+=======
 | --- | --- |
+>>>>>>> main
 | **Factory Name** | Coo-Cah Garage & Power Electronics Factory |
 | **Repository** | `coo-cah-factory-electronics-power` |
 | **Location** | Sagamu Industrial Estate, Ogun State, Nigeria |
@@ -40,7 +44,11 @@ This factory manufactures the **energy resilience products that every other Coo-
 Every Coo-Cah factory in the network requires:
 
 | Product | Recipient Factories | Priority |
+<<<<<<< copilot/create-factory-repository
+|---|---|---|
+=======
 | --- | --- | --- |
+>>>>>>> main
 | Pure Sine Wave Inverters (3 kVA, 5 kVA) | All Coo-Cah factories — backup power | CRITICAL |
 | UPS (1 kVA rack-mount) | MES server rooms at every factory site | CRITICAL |
 | MPPT Solar Charge Controllers | Coo-Cah energy/infrastructure team — all solar installs | HIGH |
@@ -56,7 +64,11 @@ Every Coo-Cah factory in the network requires:
 ## Products (Phase 1)
 
 | SKU Code | Product | Variants | Phase |
+<<<<<<< copilot/create-factory-repository
+|---|---|---|---|
+=======
 | --- | --- | --- | --- |
+>>>>>>> main
 | CCG-INV-PSW | Pure Sine Wave Inverter | 300VA / 500VA / 1kVA / 2kVA / 3kVA / 5kVA | Phase 1 |
 | CCG-INV-MSW | Modified Sine Wave Inverter | 300VA / 500VA / 1kVA / 2kVA | Phase 1 |
 | CCG-SCC-MPPT | MPPT Solar Charge Controller | 20A / 40A / 60A / 100A | Phase 1 |
@@ -72,7 +84,11 @@ Every Coo-Cah factory in the network requires:
 ### Phase 1 Starting Focus (Early Revenue + Internal Demand)
 
 | SKU | Rationale |
+<<<<<<< copilot/create-factory-repository
+|---|---|
+=======
 | --- | --- |
+>>>>>>> main
 | CCG-INV-PSW (2kVA + 3kVA) | Highest internal and external demand; flagship product |
 | CCG-SCC-MPPT (40A + 60A) | Required by Coo-Cah energy systems team immediately for all solar installs |
 | CCG-PS smart power strips | High volume, simple to manufacture, fast production ramp-up |
@@ -84,7 +100,11 @@ All other products follow as capacity and workforce scale through Phase 1.
 ## Production Capacity Targets
 
 | Product Line | Phase 1 (2025–2026) | Phase 2 (2027–2028) | Phase 3 (2029–2031) |
+<<<<<<< copilot/create-factory-repository
+|---|---|---|---|
+=======
 | --- | --- | --- | --- |
+>>>>>>> main
 | Inverters (all sizes) | 200,000 units/year | 450,000 units/year | 700,000 units/year |
 | Solar Charge Controllers | 150,000 units/year | 320,000 units/year | 500,000 units/year |
 | Battery Chargers | 80,000 units/year | 165,000 units/year | 250,000 units/year |
@@ -98,9 +118,14 @@ All other products follow as capacity and workforce scale through Phase 1.
 
 ### This Factory Supplies (Outbound — Internal Priority First)
 
+<<<<<<< copilot/create-factory-repository
+```
+Coo-Cah Garage & Power Electronics Factory
+=======
 ```text
 Coo-Cah Garage & Power Electronics Factory
 
+>>>>>>> main
         |
         |---> ALL Coo-Cah Factories       --> PSW Inverters (3kVA, 5kVA), backup power units
         |---> ALL Factory MES Server Rooms --> UPS (1kVA rack-mount)
@@ -112,13 +137,20 @@ Coo-Cah Garage & Power Electronics Factory
 
 ### This Factory Receives (Inbound)
 
+<<<<<<< copilot/create-factory-repository
+```
+=======
 ```text
+>>>>>>> main
 Coo-Cah Plastics & Polymers Factory (Agbara, Lagos)
         '--> Plastic enclosures, inverter housings, SCC casings, power strip bodies
              [~60km road; daily delivery; 1-2 day lead time; 7-day safety stock]
 
 External Suppliers
+<<<<<<< copilot/create-factory-repository
+=======
 
+>>>>>>> main
         |---> Infineon / ON Semiconductor (Germany/USA) -- Power MOSFETs, IGBTs [AIR FREIGHT]
         |---> Texas Instruments (USA) -- Gate Driver ICs [AIR FREIGHT]
         |---> Nichicon / Rubycon (Japan) -- Electrolytic capacitors [Air/Sea mixed]
@@ -132,7 +164,11 @@ External Suppliers
 ## Energy Profile Summary
 
 | Parameter | Value |
+<<<<<<< copilot/create-factory-repository
+|---|---|
+=======
 | --- | --- |
+>>>>>>> main
 | Facility Area | ~12,000 m² |
 | Estimated Peak Load | ~400 kW |
 | Daily Energy Consumption | ~2,800 kWh/day |
@@ -174,7 +210,11 @@ External Suppliers
 ## Documentation
 
 | Document | Description |
+<<<<<<< copilot/create-factory-repository
+|---|---|
+=======
 | --- | --- |
+>>>>>>> main
 | [MASTER_REPO_REF.md](./MASTER_REPO_REF.md) | Link to Coo-Kah-Doks master repo; standards traceability |
 | [docs/machinery.md](./docs/machinery.md) | Full equipment register — SMT, winding, assembly, test, AMR, packaging |
 | [docs/energy-profile.md](./docs/energy-profile.md) | 600 kWp solar, 700 kWh BESS, energy cost model, grid independence |
