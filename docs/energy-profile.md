@@ -1,6 +1,10 @@
 # Energy Profile
 
+<<<<<<< copilot/create-factory-repository
 > **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State  
+=======
+> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State
+>>>>>>> main
 > **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `docs/standards/energy-strategy.md`
 
 ---
@@ -14,7 +18,11 @@ The **600 kWp ground-mount solar + 700 kWh LFP BESS** system is specifically siz
 Solar irradiance data for Sagamu / Ogun State:
 
 | Month | PSH/day | Monthly Energy from 600kWp (est.) |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|
+=======
+| --- | --- | --- |
+>>>>>>> main
 | January | 4.6 | 82,800 kWh |
 | February | 5.0 | 90,000 kWh |
 | March | 4.8 | 86,400 kWh |
@@ -39,7 +47,11 @@ Solar irradiance data for Sagamu / Ogun State:
 ### 2.1 Load Breakdown by Zone
 
 | Zone | Key Equipment | Installed Load (kW) | Demand Factor | Running Load (kW) |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|---|---|
+=======
+| --- | --- | --- | --- | --- |
+>>>>>>> main
 | SMT Line | Reflow oven (30kW), wave solder (18kW), P&P machines ×2 (6kW), SPI, AOI, ICT | 75 | 0.70 | 52 |
 | Transformer Winding Cell | Winding machines, varnish oven (12kW), cure oven (15kW), lighting | 40 | 0.55 | 22 |
 | Inverter Assembly Line | Conveyor, tools, presses, firmware flashers, HVAC | 35 | 0.60 | 21 |
@@ -53,13 +65,21 @@ Solar irradiance data for Sagamu / Ogun State:
 | Solar/BESS Inverter Losses | Auxiliary power for solar inverters, BESS, ATS | 15 | 1.00 | 15 |
 | **Total** | | **415 kW** | | **~265 kW average / ~400 kW peak** |
 
+<<<<<<< copilot/create-factory-repository
 **Estimated peak demand:** ~400 kW (all zones simultaneously at maximum demand during peak production shift)  
+=======
+**Estimated peak demand:** ~400 kW (all zones simultaneously at maximum demand during peak production shift)
+>>>>>>> main
 **Estimated average running load:** ~265 kW (weighted average across production hours)
 
 ### 2.2 Daily Energy Consumption
 
 | Period | Hours | Average Load (kW) | Energy (kWh) |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|---|
+=======
+| --- | --- | --- | --- |
+>>>>>>> main
 | Production shift (06:00–22:00) | 16 h | 265 | 4,240 |
 | Maintenance / night (22:00–06:00) | 8 h | 70 | 560 |
 | **Total daily** | **24 h** | | **~2,800 kWh/day** |
@@ -69,7 +89,11 @@ Solar irradiance data for Sagamu / Ogun State:
 ### 2.3 Annual Energy Requirement
 
 | Metric | Value |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Production days/year | 250 (5 days/week, 50 weeks) |
 | Non-production days/year | 115 (weekends + public holidays) |
 | Production day consumption | ~2,800 kWh |
@@ -83,7 +107,11 @@ Solar irradiance data for Sagamu / Ogun State:
 ### 3.1 Why Ground-Mount (not Rooftop)
 
 | Consideration | Ground-Mount (Selected) | Rooftop |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|
+=======
+| --- | --- | --- |
+>>>>>>> main
 | Structural impact | None — uses adjacent land east of building | Significant — requires structural engineering report; adds cost |
 | Available area | ~5,000 m² east of building (flat, Sagamu industrial land) | ~8,000 m² roof available but load calculations needed |
 | Panel tilt optimisation | Optimal tilt (10°) for Sagamu latitude (6.8°N) achievable | Constrained by roof pitch |
@@ -95,7 +123,11 @@ Solar irradiance data for Sagamu / Ogun State:
 ### 3.2 System Specification
 
 | Parameter | Value |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Total PV Capacity | 600 kWp |
 | Panel Model (indicative) | Longi Hi-MO 6 LR5-72HTH-580M (580W, bifacial) or Canadian Solar HiHero 580W |
 | Panel Count | ~1,035 panels (600,000W ÷ 580W per panel) |
@@ -111,7 +143,11 @@ Solar irradiance data for Sagamu / Ogun State:
 ### 3.3 Annual Solar Generation vs. Factory Demand
 
 | Metric | Value |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Annual solar generation (600kWp × 4.7PSH × 365 × PR 0.79) | ~813,000 kWh/year |
 | Annual factory energy demand | ~757,000 kWh/year |
 | Solar self-sufficiency ratio (generation ÷ demand) | **107%** (generation exceeds demand on annual basis) |
@@ -126,7 +162,11 @@ Solar irradiance data for Sagamu / Ogun State:
 ### 4.1 BESS Sizing Rationale
 
 | Requirement | Sizing Input |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Cover full production shift without solar (fully cloudy day worst case) | 16h × 265kW avg = 4,240 kWh → impractical to cover fully; see below |
 | Cover grid outage during production hours with solar backup | Solar: 600kWp × 0.4 (cloudy) = 240kW; deficit = 265–240 = 25kW; 700kWh covers 28h of deficit |
 | Absorb peak solar excess (midday) and discharge through evening shift | 600kWp × 2h peak surplus ≈ 200kWh → fits within 700kWh usable (80% DoD = 560kWh usable) |
@@ -138,7 +178,11 @@ Solar irradiance data for Sagamu / Ogun State:
 ### 4.2 BESS Specification
 
 | Parameter | Value |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Chemistry | LFP (Lithium Iron Phosphate) — preferred for industrial use; non-flammable; 6,000+ cycle life |
 | Total Capacity | 700 kWh |
 | Configuration | 3 × containerised BESS units (~233 kWh each) — BYD BBox Pro or CATL EnerC |
@@ -157,7 +201,11 @@ Solar irradiance data for Sagamu / Ogun State:
 ## 5. Backup Generator
 
 | Parameter | Value |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Make/Model | Perkins 4016-61TRS2 or Cummins C440D5 (400kVA equivalent) |
 | Rated Output | 400 kVA / 320 kW (prime rating) |
 | Fuel | Diesel (EN 590 specification) |
@@ -190,8 +238,13 @@ flowchart TD
     M -- YES --> N[Solar charges BESS + reduces grid import]
 ```
 
+<<<<<<< copilot/create-factory-repository
 **Priority order:** Solar+BESS → Grid → Generator  
 **Transfer time:** <20ms (solar+BESS); <15 seconds (generator)  
+=======
+**Priority order:** Solar+BESS → Grid → Generator
+**Transfer time:** <20ms (solar+BESS); <15 seconds (generator)
+>>>>>>> main
 **SMT line impact:** Zero interruption on solar+BESS switch. Generator transfer requires reflow oven soft-restart (automatic; 90-second oven recovery before new boards enter).
 
 ---
@@ -201,7 +254,11 @@ flowchart TD
 ### 7.1 Baseline (without solar/BESS — grid + generator only)
 
 | Cost Item | Quantity | Unit Cost | Annual Cost |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|---|
+=======
+| --- | --- | --- | --- |
+>>>>>>> main
 | Grid electricity (8h/day × 250 days) | 530,000 kWh | ₦110/kWh | ₦58,300,000 |
 | Generator fuel (16h/day × 250 days) | ~225,000 litres diesel | ₦1,050/litre | ₦236,250,000 |
 | Generator maintenance (annual) | — | — | ₦8,500,000 |
@@ -210,7 +267,11 @@ flowchart TD
 ### 7.2 With 600 kWp Solar + 700 kWh BESS
 
 | Cost Item | Quantity | Unit Cost | Annual Cost |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|---|
+=======
+| --- | --- | --- | --- |
+>>>>>>> main
 | Grid electricity (residual, ~15% of demand) | ~113,600 kWh | ₦110/kWh | ₦12,496,000 |
 | Generator fuel (~10% backup, bad weather weeks) | ~22,500 litres | ₦1,050/litre | ₦23,625,000 |
 | Generator maintenance | — | — | ₦3,000,000 |
@@ -220,7 +281,11 @@ flowchart TD
 ### 7.3 Energy Investment Payback
 
 | Metric | Value |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Annual energy cost saving | ₦254,929,000/year (~$159,000/year) |
 | Solar+BESS CapEx (600kWp + 700kWh) | ₦600,000,000 (~$375,000 at current rates) |
 | Simple payback period | **2.35 years** |
@@ -233,7 +298,11 @@ flowchart TD
 ## 8. Energy KPIs and Monitoring
 
 | KPI | Target | Monitoring Frequency |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|
+=======
+| --- | --- | --- |
+>>>>>>> main
 | Solar self-sufficiency ratio | ≥ 80% monthly | Daily |
 | BESS round-trip efficiency | ≥ 90% | Weekly |
 | Generator runtime (% of total hours) | < 5% | Monthly |

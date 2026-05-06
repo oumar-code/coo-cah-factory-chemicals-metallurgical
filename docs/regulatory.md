@@ -1,6 +1,10 @@
 # Regulatory & Certification
 
+<<<<<<< copilot/create-factory-repository
 > **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State  
+=======
+> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State
+>>>>>>> main
 > **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `docs/standards/iso-requirements.md`
 
 ---
@@ -8,7 +12,11 @@
 ## 1. Regulatory Bodies Overview
 
 | Body | Full Name | Jurisdiction | Relevance to This Factory |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|---|
+=======
+| --- | --- | --- | --- |
+>>>>>>> main
 | **SON** | Standards Organisation of Nigeria | Federal | Mandatory product certification (NIS standards); C-Mark on all products |
 | **NCC** | Nigerian Communications Commission | Federal | Type Approval for all Wi-Fi and RF-enabled products |
 | **NESREA** | National Environmental Standards and Regulations Enforcement Agency | Federal | Factory EIA; e-waste take-back; VRLA battery disposal |
@@ -49,7 +57,11 @@ flowchart TD
 ### 2.2 NIS Standards by Product
 
 | Product | NIS Standard | Equivalent International | Key Test Requirements |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|---|
+=======
+| --- | --- | --- | --- |
+>>>>>>> main
 | CCG-INV-PSW / CCG-INV-MSW | NIS 411 | IEC 62040-1/2/3 (UPS/Inverter) | Safety, EMC, output waveform quality, efficiency |
 | CCG-SCC-MPPT / CCG-SCC-PWM | NIS (IEC 61683 adoption) | IEC 61683 | MPPT tracking efficiency ≥ 93%; temperature coefficient; safety |
 | CCG-PS Smart Power Strip | NIS 120 / NIS 197 | IEC 60884-1 (socket outlets) | Mechanical endurance (10,000 cycles), current rating, pull-out force |
@@ -62,7 +74,11 @@ flowchart TD
 Every product sold in Nigeria must bear the SON C-Mark. Label requirements:
 
 | Element | Requirement |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | SON C-Mark logo | As per SON artwork guidelines; must be of minimum size |
 | NIS certificate number | Printed on label |
 | Standard number | e.g., "NIS 411:2020" |
@@ -81,8 +97,14 @@ Every product sold in Nigeria must bear the SON C-Mark. Label requirements:
 #### IEC 62040-1: Safety Requirements
 
 Tests and requirements:
+<<<<<<< copilot/create-factory-repository
 | Clause | Requirement | Test Method |
 |---|---|---|
+=======
+
+| Clause | Requirement | Test Method |
+| --- | --- | --- |
+>>>>>>> main
 | Electric shock protection | No live parts accessible; creepage and clearance distances to Table 1 | Visual inspection + measurement |
 | Energy hazard | Capacitor stored energy — discharge to <2J within 1s of power off | Measured discharge time |
 | Thermal hazard | Max surface temperature 70°C (accessible surfaces) | Thermocouple under full load at max ambient |
@@ -94,7 +116,11 @@ Tests and requirements:
 #### IEC 62040-2: Electromagnetic Compatibility (EMC)
 
 | Class | Application | Limits |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|
+=======
+| --- | --- | --- |
+>>>>>>> main
 | Class C1 | Residential — CCG-INV-PSW models for home use | Conducted emissions: CISPR 22 Class B; Radiated: 30m measurement |
 | Class C2 | Industrial — CCG-UPS rack-mount in server rooms | Conducted emissions: CISPR 22 Class A; less stringent radiated |
 | Immunity | All products | IEC 61000-4-2 ESD, 4-4 EFT/Burst, 4-5 Surge, 4-11 Voltage dips |
@@ -106,7 +132,11 @@ Tests and requirements:
 IEC 62040-3 classifies UPS by behaviour during input power disturbances:
 
 | Classification | Type | Transfer Time | Coo-Cah Product |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|---|
+=======
+| --- | --- | --- | --- |
+>>>>>>> main
 | VFI (Voltage and Frequency Independent) | Online double-conversion | 0ms (zero) | Future Phase 2 online UPS |
 | VI (Voltage Independent) | Line interactive | ≤ 4ms | **CCG-UPS Line Interactive (Phase 1)** |
 | VFD (Voltage and Frequency Dependent) | Offline / standby | ≤ 20ms | Low-cost segment (not Phase 1 focus) |
@@ -120,7 +150,11 @@ CCG-UPS Line Interactive target: VI classification; transfer time ≤ 4ms; this 
 Key requirements for CCG-SCC-MPPT certification:
 
 | Test | Requirement | Coo-Cah Target |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|
+=======
+| --- | --- | --- |
+>>>>>>> main
 | MPPT tracking efficiency | ≥ 93% (ratio of actual harvested power to theoretical maximum) | ≥ 96% (competitive advantage) |
 | Conversion efficiency | ≥ 93% (PV input to battery output) | ≥ 95% |
 | Temperature coefficient | Operating range –20°C to +60°C; efficiency derating < 0.3%/°C | Tested in environmental chamber |
@@ -133,7 +167,11 @@ Key requirements for CCG-SCC-MPPT certification:
 ### 3.3 IEC 60745-1 / IEC 60745-2 — Power Tool Safety
 
 | Standard | Product | Key Requirements |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|
+=======
+| --- | --- | --- |
+>>>>>>> main
 | IEC 60745-1 | All power tools (general) | Electrical insulation, thermal protection, mechanical hazards, commutator sparking |
 | IEC 60745-2-1 | CCG-PT-DRILL | No-load speed accuracy; spindle runout; chuck retention |
 | IEC 60745-2-3 | CCG-PT-AG | Guard effectiveness; disc burst containment; brake (spindle stop < 3s) |
@@ -146,7 +184,11 @@ Vibration emission test (IEC 60745-1 Clause 20): Required for all handheld tools
 ### 3.4 IEC 60884-1 — Socket Outlets and Smart Power Strips
 
 | Requirement | Test |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Contact retention force | Pin pull-out force ≥ 5N for BS plug pins (Nigerian standard SABS 164-2 / BS 1363) |
 | Mechanical endurance | 10,000 insertion/withdrawal cycles; contact resistance ≤ 5mΩ after cycling |
 | Earthing continuity | Earth contact resistance ≤ 0.1Ω during test |
@@ -162,7 +204,11 @@ Vibration emission test (IEC 60745-1 Clause 20): Required for all handheld tools
 ### 4.1 Products Requiring NCC Type Approval
 
 | Product | RF Feature | NCC Requirement |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|
+=======
+| --- | --- | --- |
+>>>>>>> main
 | CCG-PS Smart Power Strip | Wi-Fi 2.4GHz (ESP32 module); individual relay switching app | Type Approval Certificate |
 | CCG-INV-PSW (Wi-Fi models) | Wi-Fi 2.4GHz monitoring and control app | Type Approval Certificate |
 
@@ -196,7 +242,11 @@ flowchart TD
 ### 5.1 Environmental Impact Assessment (EIA) — Pre-Construction
 
 | Requirement | Details |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Regulatory basis | NESREA Act 2007; EIA Act (CAP E12 LFN 2004) |
 | Trigger | Factory construction and significant industrial operations |
 | Process | Engage licensed EIA consultant; scoping study → draft EIA → public consultation → NESREA review → approval |
@@ -209,7 +259,11 @@ flowchart TD
 NESREA requires all manufacturers of electronic equipment to operate a product take-back and e-waste recycling programme.
 
 | Requirement | Coo-Cah Implementation |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Regulatory basis | National Environmental (Electrical/Electronic Sector) Regulations 2011 |
 | Take-back obligation | Manufacturer responsible for end-of-life recovery of own products |
 | Collection mechanism | Coo-Cah aftersales centre (Sagamu) accepts returned end-of-life units; collection points at major distributors |
@@ -221,7 +275,11 @@ NESREA requires all manufacturers of electronic equipment to operate a product t
 VRLA (lead-acid) batteries in UPS units are classified as hazardous waste requiring licensed disposal.
 
 | Element | Requirement |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Regulatory basis | NESREA Hazardous Waste Management Regulations; Basel Convention (Nigeria is signatory) |
 | Disposal agent | Must be NESREA-registered lead-acid battery recycler |
 | Disposal method | Lead recovery smelting at licensed facility; no landfill |
@@ -233,7 +291,11 @@ VRLA (lead-acid) batteries in UPS units are classified as hazardous waste requir
 ### 5.4 Solder and Chemical Waste Management
 
 | Waste Type | Source | Disposal Method |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|
+=======
+| --- | --- | --- |
+>>>>>>> main
 | Solder dross (lead-free SnAgCu) | Wave solder machine | Licensed metals recycler (solder dross has recoverable tin value) |
 | Solder paste waste | SMT printer purges | Sealed container; hazardous waste contractor |
 | Varnish solvent waste | Winding cell varnish tank | NESREA-registered solvent waste contractor |
@@ -245,7 +307,11 @@ VRLA (lead-acid) batteries in UPS units are classified as hazardous waste requir
 ## 6. Nigeria Customs — Import Compliance
 
 | Requirement | Details |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Form M | Required for all imports above $2,000 FOB value; filed through commercial bank before shipment |
 | SON Certificate of Conformity (CoC) | Required for semiconductors, electronic components, and any finished electronic products imported — SONCAP or PVOC scheme |
 | Pre-Shipment Inspection | For goods above $5,000: inspection at origin by SON-approved CAB (SGS, Intertek, Bureau Veritas) |
@@ -260,7 +326,11 @@ VRLA (lead-acid) batteries in UPS units are classified as hazardous waste requir
 ### 7.1 Benefits
 
 | Benefit | Details |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Corporate Income Tax (CIT) holiday | 5 years (renewable) — 100% CIT exemption |
 | Withholding tax on dividends | 0% during pioneer period |
 | Capital allowances | Preserved; can be carried forward to post-pioneer period |
@@ -270,7 +340,11 @@ VRLA (lead-acid) batteries in UPS units are classified as hazardous waste requir
 ### 7.2 Eligibility Criteria
 
 | Criterion | Coo-Cah Status |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Sector: manufacturing | YES — power electronics manufacturing |
 | Renewable energy manufacturing | YES — solar charge controllers, MPPT; eligible under NIPC Gazette Notice |
 | New investment (not acquired business) | YES — greenfield factory |
@@ -303,7 +377,11 @@ gantt
 ### 7.4 Required Documents
 
 | Document | Status |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Certificate of Incorporation (CAC) | Available — Coo-Cah Technologies Holdings |
 | Memorandum and Articles of Association | Available |
 | Feasibility/Business Plan | To prepare — this repository documents serve as basis |
@@ -317,13 +395,21 @@ gantt
 ## 8. ISO Certification Roadmap
 
 | Certification | Standard | Phase Target | Scope |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|---|
+=======
+| --- | --- | --- | --- |
+>>>>>>> main
 | Quality Management System | ISO 9001:2015 | **Phase 1 (by Q4 2027)** | All manufacturing, test, and supply chain processes |
 | Occupational Health & Safety | ISO 45001:2018 | **Phase 1 (by Q4 2027)** | All factory operations; working at height, chemical handling, electrical safety |
 | Environmental Management | ISO 14001:2015 | Phase 2 (by Q4 2028) | E-waste management, solder waste, solvent disposal, carbon footprint |
 | Energy Management | ISO 50001:2018 | Phase 2 (by Q4 2028) | Solar yield, BESS utilisation, energy intensity per unit |
 
 **ISO 9001:2015 priority areas for this factory:**
+<<<<<<< copilot/create-factory-repository
+=======
+
+>>>>>>> main
 - Design control (product design changes must go through formal design review — especially firmware and PCB changes)
 - Customer-related processes (2-year warranty; customer complaint handling; NCC Type Approval maintenance)
 - Measurement, analysis and improvement (100% load bank test data; statistical process control on SMT line)

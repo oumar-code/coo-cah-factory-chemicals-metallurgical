@@ -114,12 +114,20 @@ Electrolytic capacitors are critical components in inverter DC bus, filter stage
 ## 5. PCB Bare Boards
 
 | Phase | Strategy |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Phase 1 | In-house SMT line produces all PCBs from imported bare boards. Raw boards imported from China/Taiwan via LCL sea freight (4–6 weeks). Board specifications: 2-layer standard through Phase 1; some 4-layer for main control board. |
 | Phase 2 | Complex multi-layer boards (6-layer main inverter DSP board) consolidated to Coo-Cah Personal Electronics SMT line (if available and capacity allows). |
 
 | Board Type | Source | Quantity/Year (Phase 1) | Lead Time | Safety Stock |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|---|---|
+=======
+| --- | --- | --- | --- | --- |
+>>>>>>> main
 | 2-layer FR4 (SCC, power strip, small boards) | JLC PCB or Gold Circuit Electronics (China) via sea freight | ~200,000 panels | 4–6 weeks (sea) | 30 days |
 | 4-layer FR4 (inverter control, UPS control) | WUS Printed Circuit (China) via sea freight | ~60,000 panels | 5–7 weeks | 35 days |
 | 6-layer FR4 (main inverter DSP board — Phase 2) | Tripod Technology (Taiwan) or TTM Technologies | ~25,000 panels | 6–8 weeks | 40 days |
@@ -131,7 +139,11 @@ Electrolytic capacitors are critical components in inverter DC bus, filter stage
 > **The Coo-Cah Plastics & Polymers Factory (Agbara, Lagos) is the Tier A supplier for all plastic enclosures.** This is a strategic intra-group relationship — not a commercial procurement. It drives cost synergies, guarantees quality consistency, and eliminates import dependency on enclosures.
 
 | Component | Specification | Annual Volume (Phase 1) | Lead Time | Safety Stock |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|---|---|
+=======
+| --- | --- | --- | --- | --- |
+>>>>>>> main
 | Inverter housing (2kVA, 3kVA) | ABS+PC alloy; flame-rated UL94 V-0; IP21; colour: charcoal grey RAL 7016 | ~120,000 sets | 1–2 days (intra-group) | 7 days |
 | Inverter housing (5kVA) | ABS+PC; IP21; larger chassis form; RAL 7016 | ~40,000 sets | 1–2 days | 7 days |
 | SCC housing (MPPT/PWM all sizes) | ABS; IP32; deep-section PCB housing; black RAL 9005 | ~150,000 sets | 1–2 days | 7 days |
@@ -151,7 +163,11 @@ Electrolytic capacitors are critical components in inverter DC bus, filter stage
 UPS units contain VRLA (Valve-Regulated Lead-Acid) sealed batteries which are classified as **Dangerous Goods — Class 8 (Corrosive) under IMDG regulations for sea freight.**
 
 | Parameter | Requirement |
+<<<<<<< copilot/create-factory-repository
 |---|---|
+=======
+| --- | --- |
+>>>>>>> main
 | Battery type | VRLA/SLA — sealed, non-spillable (meets IMDG Special Provision 238) |
 | Primary supplier | CSB Battery Co. (Taiwan) — CSB GP series or HR series (high-rate UPS) |
 | Alternate supplier | Vision Battery (Hong Kong) — CP series |
@@ -168,7 +184,11 @@ UPS units contain VRLA (Valve-Regulated Lead-Acid) sealed batteries which are cl
 ## 8. Safety Stock Policy Summary
 
 | Component Category | Safety Stock | Reorder Point | Transport Mode |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|---|
+=======
+| --- | --- | --- | --- |
+>>>>>>> main
 | Power MOSFETs / IGBTs | 90 days | 60 days | Air freight mandatory |
 | Gate Driver ICs / DSP | 90 days | 60 days | Air freight mandatory |
 | Wi-Fi SoC (ESP32) | 60 days | 45 days | Air freight |
@@ -189,7 +209,11 @@ UPS units contain VRLA (Valve-Regulated Lead-Acid) sealed batteries which are cl
 Once Phase 1 internal supply targets are met, all sister factory demands are fulfilled before external commercial sales commence.
 
 | Product | Recipient | Quantity (Phase 1, Year 1) | Priority |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|---|
+=======
+| --- | --- | --- | --- |
+>>>>>>> main
 | CCG-INV-PSW 3kVA | All Coo-Cah factories (1–2 units per factory; ~15 factories) | ~30 units | CRITICAL — before external sale |
 | CCG-INV-PSW 5kVA | Large Coo-Cah factories (chemical, metallurgical) | ~20 units | CRITICAL |
 | CCG-UPS 1kVA (rack) | MES server rooms at every factory | ~15 units | CRITICAL |
@@ -208,7 +232,11 @@ Once Phase 1 internal supply targets are met, all sister factory demands are ful
 ### 10.1 Nigeria Inverter + Solar Market Sizing
 
 | Market Metric | Value | Source |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|
+=======
+| --- | --- | --- |
+>>>>>>> main
 | Nigeria inverter market size | >2 million units/year | Industry estimates (2024) |
 | Market growth rate | 15–20%/year | Driven by grid deterioration |
 | Estimated market value (at ₦150k average unit price) | ~₦300 billion/year (~$188M/year) | Calculated |
@@ -218,7 +246,11 @@ Once Phase 1 internal supply targets are met, all sister factory demands are ful
 ### 10.2 Competitive Positioning
 
 | Factor | Imported (Chinese OEM) | Coo-Cah (Local) |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|
+=======
+| --- | --- | --- |
+>>>>>>> main
 | Price | Low–Medium | Medium (5–15% premium) |
 | Warranty | 12 months; return-to-importer (Lagos distributor) | **24 months; factory-direct aftersales (Sagamu)** |
 | Availability of spares | Slow; import-dependent | **Fast; on-site spare parts; 48h repair SLA** |
@@ -229,7 +261,11 @@ Once Phase 1 internal supply targets are met, all sister factory demands are ful
 ### 10.3 Distribution Strategy
 
 | Channel | Phase 1 Focus | Phase 2 Expansion |
+<<<<<<< copilot/create-factory-repository
 |---|---|---|
+=======
+| --- | --- | --- |
+>>>>>>> main
 | Direct B2B (large corporates, hotels, hospitals) | YES — high-value units (3kVA, 5kVA, UPS) | Expand to state governments, military |
 | Solar installers / EPC contractors | YES — SCC, solar kits | Certified Coo-Cah Installer programme |
 | Electrical wholesale distributors | YES — Lagos, Abuja, PH, Kano | Expand to Enugu, Kaduna, Ibadan |
