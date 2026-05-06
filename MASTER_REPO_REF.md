@@ -3,11 +3,7 @@
 ## Orchestrating Repository
 
 | Attribute | Value |
-<<<<<<< copilot/create-factory-repository
-|---|---|
-=======
 | --- | --- |
->>>>>>> main
 | **Repository** | [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) |
 | **Purpose** | Single source of truth for Coo-Cah Technologies Holdings — strategy, architecture, blueprints, and group-wide standards |
 | **Template Version Used** | v1.0 |
@@ -20,11 +16,7 @@
 This repository was seeded from the following master repo paths:
 
 | Master Repo Path | Content Used |
-<<<<<<< copilot/create-factory-repository
-|---|---|
-=======
 | --- | --- |
->>>>>>> main
 | `factories/electronics/garage-power-electronics/` | Factory-level blueprints — product specs, capacity targets, equipment lists, energy profile, regulatory requirements |
 | `factories/_template/` | Standard document template formats — section structures, table conventions, Mermaid diagram styles |
 
@@ -35,11 +27,7 @@ This repository was seeded from the following master repo paths:
 All documents in this repository are consistent with and governed by the following standards defined in `docs/` of the master repo:
 
 | Standard Area | Master Repo Document | Applied In |
-<<<<<<< copilot/create-factory-repository
-|---|---|---|
-=======
 | --- | --- | --- |
->>>>>>> main
 | ISO Quality Requirements | `docs/standards/iso-requirements.md` | `docs/regulatory.md` |
 | Automation Phases Framework | `docs/standards/automation-phases.md` | `docs/automation-roadmap.md` |
 | Supply Chain Doctrine | `docs/standards/supply-chain-doctrine.md` | `docs/supply-chain.md` |
@@ -70,11 +58,7 @@ This repository confirms:
 ## Version History
 
 | Date | Version | Change | Author |
-<<<<<<< copilot/create-factory-repository
-|---|---|---|---|
-=======
 | --- | --- | --- | --- |
->>>>>>> main
 | 2025-05-01 | 1.0.0 | Initial factory repository creation from master repo template v1.0 | Coo-Cah Factory Dev Team |
 
 ---

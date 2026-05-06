@@ -1,12 +1,7 @@
 # Digital Twin
 
-<<<<<<< copilot/create-factory-repository
-> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State  
-> **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `docs/standards/ai-platform.md`  
-=======
 > **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State
 > **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `docs/standards/ai-platform.md`
->>>>>>> main
 > **Platform:** Group-standard AI/IoT platform per master repo standards
 
 ---
@@ -30,11 +25,7 @@ The digital twin is a phased investment, growing from basic asset monitoring in 
 All equipment in the digital twin is registered with a unique asset ID. Sensor data streams are linked to asset IDs. MES work orders reference asset IDs. Maintenance records are filed against asset IDs.
 
 | Asset ID | Asset Name | Location (Zone) | DT Phase | Key Data Streams |
-<<<<<<< copilot/create-factory-repository
-|---|---|---|---|---|
-=======
 | --- | --- | --- | --- | --- |
->>>>>>> main
 | CCG-EP-SMT-001 | Solder Paste Printer | Zone B — SMT | Phase 1 | Print alignment delta (X/Y/θ); squeegee pressure; print cycle time |
 | CCG-EP-SMT-002 | SPI System | Zone B — SMT | Phase 1 | Paste height (3D point cloud per pad); pass/fail rate; defect trend |
 | CCG-EP-SMT-003 | Pick & Place — High Speed | Zone B — SMT | Phase 1 | CPH (components per hour); feeder errors; nozzle change count; placement accuracy |
@@ -73,11 +64,7 @@ All equipment in the digital twin is registered with a unique asset ID. Sensor d
 ### 2.2 AMR Fleet Asset Register
 
 | Asset ID | AMR Unit | Platform | DT Data Streams |
-<<<<<<< copilot/create-factory-repository
-|---|---|---|---|
-=======
 | --- | --- | --- | --- |
->>>>>>> main
 | CCG-EP-AMR-001 to 012 | AMR Units #1–12 | Geek+ P40 | Position (x,y,θ) real-time; task status; battery SoC; load weight; fault status |
 
 ---
@@ -105,10 +92,7 @@ flowchart LR
 ```
 
 **Key SMT digital twin metrics (Phase 1):**
-<<<<<<< copilot/create-factory-repository
-=======
 
->>>>>>> main
 - OEE per machine (Availability × Performance × Quality)
 - First-pass yield (FPY) by product, by shift, by operator
 - Defect Pareto chart (by defect type; updated every hour)
@@ -134,11 +118,7 @@ In Phase 2, the SMT digital twin gains predictive and closed-loop optimisation c
 When CNC winding machines are installed in Phase 2, each machine provides:
 
 | Data Stream | Protocol | Frequency | Use |
-<<<<<<< copilot/create-factory-repository
-|---|---|---|---|
-=======
 | --- | --- | --- | --- |
->>>>>>> main
 | Turns counter (running total) | OPC-UA | Real-time | Verify against programme specification; alert on discrepancy |
 | Wire tension (mN) | OPC-UA | 10Hz | Tension profile per winding layer; detect wire break / tension anomaly |
 | Spindle RPM | OPC-UA | 1Hz | Cycle time calculation; OEE |
@@ -151,11 +131,7 @@ When CNC winding machines are installed in Phase 2, each machine provides:
 ### 4.2 Winding Cell OEE Dashboard
 
 | KPI | Target | Measurement |
-<<<<<<< copilot/create-factory-repository
-|---|---|---|
-=======
 | --- | --- | --- |
->>>>>>> main
 | Toroidal winding OEE | ≥ 75% (Phase 2 CNC) | Machine API → MES |
 | EI winding OEE | ≥ 78% | Machine API → MES |
 | Winding rework rate | < 0.5% (Phase 2 CNC) | Transformer tester results |
@@ -192,11 +168,7 @@ flowchart TD
 ### 5.2 Test Record Schema (per unit)
 
 | Field | Example Value | Source |
-<<<<<<< copilot/create-factory-repository
-|---|---|---|
-=======
 | --- | --- | --- |
->>>>>>> main
 | Serial number | CCG-INV-PSW-2K-2026-042891 | MES barcode scan at station entry |
 | Product SKU | CCG-INV-PSW-2kVA | MES work order |
 | Test date/time | 2026-11-15 14:32:07 | MES system clock |
@@ -245,11 +217,7 @@ flowchart LR
 ### 6.2 Energy KPI Tracking
 
 | KPI | Unit | Collection | Use |
-<<<<<<< copilot/create-factory-repository
-|---|---|---|---|
-=======
 | --- | --- | --- | --- |
->>>>>>> main
 | Solar generation (real-time) | kW / kWh/day | String inverter API | Self-sufficiency calculation |
 | BESS state of charge | % / kWh | BESS BMS API | ATS decision logic; curtailment |
 | Grid import/export | kW / kWh | Smart meter | Cost model; CO₂ intensity |
