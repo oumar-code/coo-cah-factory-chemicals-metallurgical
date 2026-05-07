@@ -149,11 +149,116 @@ graph TD
 
 ---
 
-## Related Documents
+## 7. Energy Profile Summary
 
-- [Machinery & Equipment](./machinery.md)
-- [Floor Plan & Layout](./floor-plan.md)
-- [Energy Profile](./energy-profile.md)
-- [Automation Roadmap](./automation-roadmap.md)
-- [Supply Chain](./supply-chain.md)
-- [Regulatory & Certification](./regulatory.md)
+| Parameter | Value |
+| --- | --- |
+| Facility Area | ~35,000 m² |
+| Estimated Peak Load | ~2,500 kW |
+| Daily Energy Consumption | ~16,000 kWh/day (16h operational) |
+| Recommended Solar PV | 1,000 kWp rooftop + partial ground-mount |
+| Recommended BESS | 1,200 kWh LFP — high capacity for furnace inrush buffering |
+| Warri Solar Irradiance | 5.0 Peak Sun Hours/day |
+| Target Solar Self-Sufficiency | ≥ 70% |
+| Annual CO₂ Avoidance (est.) | ~950 tonnes CO₂/year |
+| Grid Connection | BEDC 33/11 kV dedicated HV supply |
+
+---
+
+## 8. Key Performance Indicators
+
+| KPI | Target | Frequency |
+| --- | --- | --- |
+| OEE (Overall Equipment Effectiveness) | ≥ 72% (Phase 1) | Daily |
+| Rolling Mill Yield | ≥ 96% (mass yield input→output) | Per Coil |
+| Copper Drawing Yield | ≥ 97% | Per Lot |
+| Product Defect Rate | < 2,500 ppm | Weekly |
+| On-Time Delivery (intra-group) | ≥ 93% | Weekly |
+| Energy Intensity (kWh/tonne product) | ≤ 450 kWh/tonne (steel); ≤ 380 kWh/tonne (Al) | Monthly |
+| Solar Self-Sufficiency | ≥ 70% | Monthly |
+| NESREA ETP Compliance | 100% | Monthly |
+| MES Data Completeness | ≥ 95% | Daily |
+| Safety Incidents | Zero LTI | Continuous |
+
+---
+
+## 9. Phase 1 Implementation Checklist
+
+### Site & Legal
+
+- [ ] Finalize land title and C of O for the Warri/Ovwian-Aladja site
+- [ ] Complete geotechnical survey and boundary demarcation
+- [ ] Execute EPC/owner-representative legal framework
+
+### Regulatory & Permitting
+
+- [ ] Submit and approve EIA with NESREA and Delta State authorities
+- [ ] Secure development/building permits for heavy-industry operations
+- [ ] Complete hazardous material and effluent handling permits
+
+### Infrastructure & Utilities
+
+- [ ] Confirm BEDC 33/11 kV dedicated HV interconnection scope
+- [ ] Complete internal power distribution and substation civil works
+- [ ] Commission industrial water, compressed air, and gas utility backbone
+
+### Equipment Procurement
+
+- [ ] Place purchase orders for rolling, extrusion, wire drawing, and galvanising lines
+- [ ] Confirm FAT schedule and acceptance criteria with OEMs
+- [ ] Complete import logistics and site delivery sequence plan
+
+### Supplier Agreements
+
+- [ ] Sign long-term offtake agreement with Delta Steel Company / DSIL
+- [ ] Finalize LME-linked ETP copper cathode import contracts via Apapa
+- [ ] Secure dual-source aluminium ingot contracts (NALCO / Alumetal + import backup)
+
+### Certifications
+
+- [ ] Launch ISO 9001:2015 QMS implementation program
+- [ ] Launch ISO 14001:2015 and ISO 45001:2018 certification readiness
+- [ ] Define product compliance pathway with SON and NESREA obligations
+
+### Production Commissioning
+
+- [ ] Complete cold commissioning for all Phase 1 process lines
+- [ ] Execute hot commissioning and first production qualification batches
+- [ ] Achieve stable 30-day run at target quality and safety metrics
+
+---
+
+## 10. Cross-Factory Dependencies
+
+| Dependency Type | Factory | Material / Service | Direction |
+| --- | --- | --- | --- |
+| Output | Power Electronics Factory | Copper wire rod + drawn wire (transformer/motor windings) | Outbound |
+| Output | Kitchen Electronics Factory | Aluminium sheet + coil (appliance bodies, frames, heat exchangers) | Outbound |
+| Output | Personal Electronics Factory | Aluminium extrusion profiles (device chassis, bezels) | Outbound |
+| Output | Plastics & Polymers Factory | Lead-acid battery grid alloy (Pb-Sb, Pb-Ca) | Outbound |
+| Output | External B2B Market | Steel structural section, galvanised coil (construction) | Outbound |
+| Input | Coo-Cah AI Platform | MES, Digital Twin, Process Analytics, DCS AI integration | Inbound |
+| Input | Delta Steel Company (external Tier A) | Steel billet + heavy scrap | Inbound |
+| Input | ETP copper cathode imports (LME) | Copper cathode (Apapa) | Inbound |
+
+---
+
+## 11. Documentation Index
+
+| Document | Link | Notes |
+| --- | --- | --- |
+| Machinery & Equipment | [machinery.md](./machinery.md) | Core line equipment and technical specifications |
+| Floor Plan & Layout | [floor-plan.md](./floor-plan.md) | Site zoning, flow paths, and area allocation |
+| Energy Profile | [energy-profile.md](./energy-profile.md) | Load model, PV/BESS assumptions, and utility design |
+| Automation Roadmap | [automation-roadmap.md](./automation-roadmap.md) | DCS, MES, AI, and digital twin rollout path |
+| Supply Chain | [supply-chain.md](./supply-chain.md) | Upstream sourcing and downstream distribution strategy |
+| Regulatory & Certification | [regulatory.md](./regulatory.md) | Compliance landscape and certification requirements |
+| CAPEX & OPEX | [capex-opex.md](./capex-opex.md) | Capital and operating cost structure |
+| MES Integration | [mes-integration.md](./mes-integration.md) | ISA-95 data structure and integration model |
+| Digital Twin | [digital-twin.md](./digital-twin.md) | Twin architecture, simulation, and analytics scope |
+| MASTER_REPO_REF | [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) | Group-level documentation master repository |
+
+Code
+
+---
+*This document is part of the Coo-Cah Manufacturing Ecosystem documentation suite.*
