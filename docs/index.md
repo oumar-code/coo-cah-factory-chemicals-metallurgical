@@ -55,7 +55,8 @@ metal-intensive production.
 1. Complete the factory blueprint, equipment definition, and utilities planning for each process line.
 2. Finalize raw-material sourcing for billet, aluminium ingot, copper cathode, and lead inputs.
 3. Align layout, energy, environmental, and compliance requirements with heavy-industry operations.
-4. Prepare the AI-enabled operating model covering MES integration, traceability, and digital-twin rollout.
+4. Prepare the AI-enabled operating model covering Manufacturing Execution System (MES)
+   integration, traceability, and digital-twin rollout.
 
 ---
 
