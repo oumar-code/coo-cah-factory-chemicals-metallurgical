@@ -1,0 +1,35 @@
+/* Coo-Cah Metallurgical & Minerals Factory — MkDocs custom styles */
+
+:root {
+  --coo-cah-blue-grey: #546E7A;
+  --coo-cah-deep-orange: #FF6E40;
+}
+
+/* Wider table support for large equipment registers */
+.md-content__inner table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Badge styling */
+img[alt*="Status"],
+img[alt*="Tier"],
+img[alt*="Phase"] {
+  margin-right: 4px;
+}
+
+/* Admonition — furnace safety / high-temperature hazard */
+.admonition.danger {
+  border-left-color: #FF3D00 !important;
+}
+
+/* Admonition — chemical / ETP / NESREA compliance warning */
+.admonition.warning {
+  border-left-color: #FF6E40 !important;
+}
+
+/* Admonition — DCS/SIS automation note */
+.admonition.tip {
+  border-left-color: #546E7A !important;
+}
