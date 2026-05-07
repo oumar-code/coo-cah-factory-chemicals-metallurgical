@@ -1,14 +1,14 @@
 # Digital Twin
 
 > **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State
-> **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `docs/standards/ai-platform.md`
+> **Master Repo Ref:** [Coo-Kah-Doks — platform/digital-twin-platform-architecture.md](https://github.com/oumar-code/Coo-Kah-Doks/blob/main/platform/digital-twin-platform-architecture.md)
 > **Platform:** Group-standard AI/IoT platform per master repo standards
 
 ---
 
 ## 1. Digital Twin Vision
 
-The Coo-Cah Electronics Power Factory's digital twin is the virtual replica of the physical factory — updated in real time from sensor data, machine interfaces, MES records, and energy metering. Its purpose is threefold:
+The Coo-Cah Electronics Power Factory's digital twin is the virtual replica of the physical factory — updated in real time from sensor data, machine interfaces, MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) records, and energy metering. Its purpose is threefold:
 
 1. **Visibility:** See what is happening in the factory at any moment — production throughput, WIP, test results, energy consumption, equipment status
 2. **Analysis:** Understand why things are happening — correlate quality defects with process variables, identify bottlenecks, track energy efficiency
@@ -22,7 +22,7 @@ The digital twin is a phased investment, growing from basic asset monitoring in 
 
 ### 2.1 Production Equipment Asset Register
 
-All equipment in the digital twin is registered with a unique asset ID. Sensor data streams are linked to asset IDs. MES work orders reference asset IDs. Maintenance records are filed against asset IDs.
+All equipment in the digital twin is registered with a unique asset ID. Sensor data streams are linked to asset IDs. MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) work orders reference asset IDs. Maintenance records are filed against asset IDs.
 
 | Asset ID | Asset Name | Location (Zone) | DT Phase | Key Data Streams |
 | --- | --- | --- | --- | --- |
@@ -73,19 +73,19 @@ All equipment in the digital twin is registered with a unique asset ID. Sensor d
 
 ### 3.1 Phase 1 Scope — Monitoring Dashboard
 
-The Phase 1 SMT digital twin provides a real-time monitoring dashboard for the factory control room and engineering team. Data is pulled from machine APIs (typically REST/Modbus/MQTT) and displayed in the MES energy + production dashboard.
+The Phase 1 SMT digital twin provides a real-time monitoring dashboard for the factory control room and engineering team. Data is pulled from machine APIs (typically REST/Modbus/MQTT) and displayed in the MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) energy + production dashboard.
 
 ```mermaid
 flowchart LR
-    P[Paste Printer\nOPC-UA] --> MES
-    S[SPI System\nOPC-UA / REST] --> MES
-    PP1[P&P Machine 1\nFuji NEXIM API] --> MES
-    PP2[P&P Machine 2\nYamaha API] --> MES
-    RO[Reflow Oven\nModbus TCP] --> MES
-    WS[Wave Solder\nModbus TCP] --> MES
-    AOI[AOI System\nREST API] --> MES
-    ICT[ICT System\nRS-232 / REST] --> MES
-    MES[MES Platform\nEdge Server] --> DT[Digital Twin\nDashboard]
+    P[Paste Printer\nOPC-UA] --> MES_OP
+    S[SPI System\nOPC-UA / REST] --> MES_OP
+    PP1[P&P Machine 1\nFuji NEXIM API] --> MES_OP
+    PP2[P&P Machine 2\nYamaha API] --> MES_OP
+    RO[Reflow Oven\nModbus TCP] --> MES_OP
+    WS[Wave Solder\nModbus TCP] --> MES_OP
+    AOI[AOI System\nREST API] --> MES_OP
+    ICT[ICT System\nRS-232 / REST] --> MES_OP
+    MES_OP["MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) Platform\nEdge Server"] --> DT[Digital Twin\nDashboard]
     DT --> CR[Control Room Display]
     DT --> ENG[Engineering Tablets]
     DT --> MGT[Management Dashboard]
@@ -96,7 +96,7 @@ flowchart LR
 - OEE per machine (Availability × Performance × Quality)
 - First-pass yield (FPY) by product, by shift, by operator
 - Defect Pareto chart (by defect type; updated every hour)
-- Reel consumption vs. production order (MES reconciliation)
+- Reel consumption vs. production order (MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) reconciliation)
 - Reflow oven temperature profile — all zones, all shifts overlaid
 
 ### 3.2 Phase 2 Scope — Predictive and Closed-Loop
@@ -122,26 +122,26 @@ When CNC winding machines are installed in Phase 2, each machine provides:
 | Turns counter (running total) | OPC-UA | Real-time | Verify against programme specification; alert on discrepancy |
 | Wire tension (mN) | OPC-UA | 10Hz | Tension profile per winding layer; detect wire break / tension anomaly |
 | Spindle RPM | OPC-UA | 1Hz | Cycle time calculation; OEE |
-| Programme ID | OPC-UA | Per batch | Link to MES work order; verify correct programme loaded |
-| Fault codes | OPC-UA | On event | Immediate MES alert; maintenance dispatch |
+| Programme ID | OPC-UA | Per batch | Link to MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) work order; verify correct programme loaded |
+| Fault codes | OPC-UA | On event | Immediate MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) alert; maintenance dispatch |
 | Layer count (complete) | OPC-UA | Per layer | Compare to specification; alert if layer count deviates |
 
-**Winding batch record (digital):** Every transformer wound on a CNC machine has a complete digital record in MES: programme ID, wire lot number, turn count per layer, tension profile, operator who loaded the core, test result from transformer tester. This record is linked to the inverter serial number that uses the transformer.
+**Winding batch record (digital):** Every transformer wound on a CNC machine has a complete digital record in MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks): programme ID, wire lot number, turn count per layer, tension profile, operator who loaded the core, test result from transformer tester. This record is linked to the inverter serial number that uses the transformer.
 
 ### 4.2 Winding Cell OEE Dashboard
 
 | KPI | Target | Measurement |
 | --- | --- | --- |
-| Toroidal winding OEE | ≥ 75% (Phase 2 CNC) | Machine API → MES |
-| EI winding OEE | ≥ 78% | Machine API → MES |
+| Toroidal winding OEE | ≥ 75% (Phase 2 CNC) | Machine API → MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) |
+| EI winding OEE | ≥ 78% | Machine API → MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) |
 | Winding rework rate | < 0.5% (Phase 2 CNC) | Transformer tester results |
-| Programme change-over time | < 5 minutes | MES timestamp |
+| Programme change-over time | < 5 minutes | MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) timestamp |
 
 ---
 
 ## 5. Load Bank Test Data Integration
 
-> **All load bank test data is automatically captured via Ethernet and permanently stored in MES against the unit serial number.** No manual data entry for test results.
+> **All load bank test data is automatically captured via Ethernet and permanently stored in MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) against the unit serial number.** No manual data entry for test results.
 
 ### 5.1 Data Flow Architecture
 
@@ -158,8 +158,8 @@ flowchart TD
     SCC1[SCC Test Bench #1] --> EDC
     SCC2[SCC Test Bench #2] --> EDC
     SCC3[SCC Test Bench #3] --> EDC
-    EDC --> MES[MES Platform\nTest Module]
-    MES --> TR[Test Record\nlinked to Serial Number]
+    EDC --> MES_TEST["MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) Platform\nTest Module"]
+    MES_TEST --> TR[Test Record\nlinked to Serial Number]
     TR --> QA[QA Dashboard\nFirst Pass Yield\nDefect Categories]
     TR --> AFT[Aftersales Portal\nWarranty Claim Lookup]
     TR --> SON[SON Audit Trail\nIEC 62040 Test Evidence]
@@ -169,9 +169,9 @@ flowchart TD
 
 | Field | Example Value | Source |
 | --- | --- | --- |
-| Serial number | CCG-INV-PSW-2K-2026-042891 | MES barcode scan at station entry |
-| Product SKU | CCG-INV-PSW-2kVA | MES work order |
-| Test date/time | 2026-11-15 14:32:07 | MES system clock |
+| Serial number | CCG-INV-PSW-2K-2026-042891 | MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) barcode scan at station entry |
+| Product SKU | CCG-INV-PSW-2kVA | MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) work order |
+| Test date/time | 2026-11-15 14:32:07 | MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) system clock |
 | Test station | CCG-EP-TST-003 | Station ID |
 | DC input voltage tested (V) | 24.0V (battery nominal) | Load bank instrument |
 | AC output voltage (V RMS) | 230.2 V | Power analyser |
@@ -187,7 +187,7 @@ flowchart TD
 | Thermal image filename | SN042891_thermal_001.jpg | FLIR camera |
 | Peak internal temperature (°C) | 64°C (MOSFET heatsink) | Thermal camera |
 | Test result | PASS | Derived from all above |
-| Operator ID | ENG-042 | MES login |
+| Operator ID | ENG-042 | MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) login |
 | Firmware version | CCG-INV-PSW-v2.3.1 | Read from unit via UART |
 
 ---
@@ -210,7 +210,7 @@ flowchart LR
     ZONE --> ASM_M[Assembly + Test\nkWh/shift]
     ZONE --> LT_M[Lighting + HVAC\nkWh/shift]
     EMS --> DT_E[Energy Digital Twin\nDashboard]
-    DT_E --> MES[MES Energy Module]
+    DT_E --> MES_EN["MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) Energy Module"]
     DT_E --> ISO[ISO 50001 KPI Reports]
 ```
 
@@ -222,6 +222,6 @@ flowchart LR
 | BESS state of charge | % / kWh | BESS BMS API | ATS decision logic; curtailment |
 | Grid import/export | kW / kWh | Smart meter | Cost model; CO₂ intensity |
 | Generator runtime | Hours | Generator controller | Fuel cost; maintenance scheduling |
-| Energy per unit produced (inverter) | kWh/unit | MES (production count) ÷ metering | ISO 50001 energy intensity |
+| Energy per unit produced (inverter) | kWh/unit | MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) (production count) ÷ metering | ISO 50001 energy intensity |
 | CO₂ intensity | kg CO₂/kWh | Calculated (grid=0.43; gen=0.68; solar=0) | ESG reporting |
 | Solar self-sufficiency (monthly) | % | Monthly calculation | Group energy KPI |
