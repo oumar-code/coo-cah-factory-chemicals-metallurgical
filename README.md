@@ -1,23 +1,20 @@
 # Coo-Cah Metallurgical & Minerals Factory
+<img src="https://img.shields.io/badge/Status-PLANNED-yellow">
+<img src="https://img.shields.io/badge/Tier-2%20Strategic%20Manufacturing-orange">
+<img src="https://img.shields.io/badge/Phase-2%20Development-blue">
+<img src="https://img.shields.io/badge/Vertical-Chemicals%20%2F%20Metallurgical-steelblue">
+<img src="https://img.shields.io/badge/Location-Warri%2FDelta%20State%2C%20Nigeria-lightgrey">
 
-<img src="https://img.shields.io/badge/Status-PLANNED-yellow" alt="Status: Planned">
-<img src="https://img.shields.io/badge/Tier-2%20Strategic%20Manufacturing-orange" alt="Tier: 2 Strategic Manufacturing">
-<img src="https://img.shields.io/badge/Phase-2%20Development-blue" alt="Phase: 2 Development">
-<img src="https://img.shields.io/badge/Vertical-Chemicals%20%2F%20Metallurgical-steelblue" alt="Vertical: Chemicals / Metallurgical">
-<img src="https://img.shields.io/badge/Location-Warri%2FDelta%20State%2C%20Nigeria-lightgrey" alt="Location: Warri / Delta State, Nigeria">
-
-> **Project Coo-Cah | AI-Powered Manufacturing Ecosystem**  
-> **Vertical:** Chemicals — Steel processing, aluminium rolling, copper drawing, lead alloys  
-> **Location:** Warri / Ovwian-Aladja Steel Corridor, Delta State, Nigeria  
-> **Phase:** Phase 2  
-> **Document Version:** 1.0 | **Status:** PLANNED
+> **Tier 2 Strategic Manufacturing** — This factory supplies copper wire rod, aluminium sheet,
+> steel structural sections, and lead alloys to electronics, construction, and power verticals
+> across the Coo-Cah ecosystem.
 
 ---
 
 ## Factory Overview
 
 | Attribute | Detail |
-| --- | --- |
+|---|---|
 | **Factory Name** | Coo-Cah Metallurgical & Minerals Factory |
 | **Factory ID** | CCH-MET |
 | **Repository** | `coo-cah-factory-chemicals-metallurgical` |
@@ -39,7 +36,7 @@
 ## Products — Phase 1 SKUs
 
 | SKU Code | Product Description | Process | Priority |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | CCH-MET-001 | Steel sheet coil (0.5–3 mm CRCA) | Cold rolling mill | Phase 1 Start |
 | CCH-MET-002 | Steel structural section (angle, channel, beam) | Structural rolling | Phase 1 Start |
 | CCH-MET-003 | Aluminium sheet + coil (1050, 3003, 5052) | Aluminium rolling | Phase 1 Mid |
