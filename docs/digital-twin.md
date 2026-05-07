@@ -85,7 +85,7 @@ flowchart LR
     WS[Wave Solder\nModbus TCP] --> MES_OP
     AOI[AOI System\nREST API] --> MES_OP
     ICT[ICT System\nRS-232 / REST] --> MES_OP
-    MES_OP[MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) Platform\nEdge Server] --> DT[Digital Twin\nDashboard]
+    MES_OP["MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) Platform\nEdge Server"] --> DT[Digital Twin\nDashboard]
     DT --> CR[Control Room Display]
     DT --> ENG[Engineering Tablets]
     DT --> MGT[Management Dashboard]
@@ -158,7 +158,7 @@ flowchart TD
     SCC1[SCC Test Bench #1] --> EDC
     SCC2[SCC Test Bench #2] --> EDC
     SCC3[SCC Test Bench #3] --> EDC
-    EDC --> MES_TEST[MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) Platform\nTest Module]
+    EDC --> MES_TEST["MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) Platform\nTest Module"]
     MES_TEST --> TR[Test Record\nlinked to Serial Number]
     TR --> QA[QA Dashboard\nFirst Pass Yield\nDefect Categories]
     TR --> AFT[Aftersales Portal\nWarranty Claim Lookup]
@@ -210,7 +210,7 @@ flowchart LR
     ZONE --> ASM_M[Assembly + Test\nkWh/shift]
     ZONE --> LT_M[Lighting + HVAC\nkWh/shift]
     EMS --> DT_E[Energy Digital Twin\nDashboard]
-    DT_E --> MES_EN[MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) Energy Module]
+    DT_E --> MES_EN["MES (Siemens Opcenter — confirmed per ADR-002 in Coo-Kah-Doks) Energy Module"]
     DT_E --> ISO[ISO 50001 KPI Reports]
 ```
 
