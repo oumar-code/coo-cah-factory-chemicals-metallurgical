@@ -53,7 +53,7 @@ metal-intensive production.
 ## Phase 2 Priorities
 
 1. Complete the factory blueprint, equipment definition, and utilities planning for each process line.
-2. Finalise raw-material sourcing for billet, aluminium ingot, copper cathode, and lead inputs.
+2. Finalize raw-material sourcing for billet, aluminium ingot, copper cathode, and lead inputs.
 3. Align layout, energy, environmental, and compliance requirements with heavy-industry operations.
 4. Prepare the AI-enabled operating model covering MES integration, traceability, and digital-twin rollout.
 
