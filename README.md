@@ -6,9 +6,11 @@
 <img src="https://img.shields.io/badge/Vertical-Chemicals%20%2F%20Metallurgical-steelblue" alt="Vertical: Chemicals / Metallurgical">
 <img src="https://img.shields.io/badge/Location-Warri%2FDelta%20State%2C%20Nigeria-lightgrey" alt="Location: Warri / Delta State, Nigeria">
 
-> **Tier 2 Strategic Manufacturing** — This factory supplies copper wire rod, aluminium sheet,
-> steel structural sections, and lead alloys to electronics, construction, and power verticals
-> across the Coo-Cah ecosystem.
+> **Project Coo-Cah | AI-Powered Manufacturing Ecosystem**  
+> **Vertical:** Chemicals — Steel processing, aluminium rolling, copper drawing, lead alloys  
+> **Location:** Warri / Ovwian-Aladja Steel Corridor, Delta State, Nigeria  
+> **Phase:** Phase 2  
+> **Document Version:** 1.0 | **Status:** PLANNED
 
 ---
 

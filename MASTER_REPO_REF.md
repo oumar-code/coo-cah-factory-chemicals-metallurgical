@@ -3,7 +3,7 @@
 ## Orchestrating Repository
 
 | Attribute | Value |
-|---|---|
+| --- | --- |
 | **Repository** | <a href="https://github.com/oumar-code/Coo-Kah-Doks">oumar-code/Coo-Kah-Doks</a> |
 | **Purpose** | Single source of truth for Coo-Cah Technologies Holdings — strategy, architecture, blueprints, and group-wide standards |
 | **Template Version Used** | v1.0 |
@@ -16,7 +16,7 @@
 This repository was seeded from the following master repo paths:
 
 | Master Repo Path | Content Used |
-|---|---|
+| --- | --- |
 | `factories/chemicals/metallurgical/` | Factory-level blueprints — product specs, capacity targets, equipment lists, energy profile, regulatory requirements |
 | `factories/_template/` | Standard document template formats — section structures, table conventions, Mermaid diagram styles |
 
@@ -25,7 +25,7 @@ This repository was seeded from the following master repo paths:
 ## Group-Wide Standards Applied
 
 | Standard Area | Master Repo Document | Applied In |
-|---|---|---|
+| --- | --- | --- |
 | ISO 9001:2015 — Quality Management | `docs/standards/iso-requirements.md` | `docs/regulatory.md` |
 | ISO 14001:2015 — Environmental | `docs/standards/iso-requirements.md` | `docs/regulatory.md` |
 | ISO 45001:2018 — Health &amp; Safety | `docs/standards/iso-requirements.md` | `docs/regulatory.md` |
@@ -55,7 +55,7 @@ This repository was seeded from the following master repo paths:
 ## Related Repositories
 
 | Repository | Relationship |
-|---|---|
+| --- | --- |
 | <a href="https://github.com/oumar-code/Coo-Kah-Doks">oumar-code/Coo-Kah-Doks</a> | Master orchestrating repo |
 | `coo-cah-factory-electronics-power` | Primary intra-group customer — copper wire rod (transformer/inductor windings) |
 | `coo-cah-factory-electronics-kitchen` | Intra-group customer — aluminium sheet (appliance bodies, heat exchangers) |
@@ -68,7 +68,7 @@ This repository was seeded from the following master repo paths:
 ## Version History
 
 | Date | Version | Change | Author |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 2025-Q2 | 1.0.0 | Initial factory repository created from master repo blueprint | Coo-Cah Factory Dev Team |
 
 ---
