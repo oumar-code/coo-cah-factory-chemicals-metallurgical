@@ -18,8 +18,5 @@ MD033: false
 # Ordered list numbering — allow 1. 1. 1. style
 MD029: false
 
-# No blank lines after headings requirement — relaxed
-MD022: false
-
 # Allow duplicate headings (e.g. "Phase 1" in multiple docs)
 MD024: false
