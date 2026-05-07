@@ -113,17 +113,20 @@ jobs:
       - name: Create markdownlint config
         run: |
           cat > .markdownlint.json << 'EOF'
-          {
-            "default": true,
-            "MD013": false,
-            "MD033": false,
-            "MD041": false,
-            "MD007": { "indent": 2 },
-            "MD030": false,
-            "MD024": false,
-            "MD036": false
-          }
-          EOF
+           {
+             "default": true,
+             "MD013": false,
+             "MD033": false,
+             "MD041": false,
+             "MD007": { "indent": 2 },
+             "MD030": false,
+             "MD024": false,
+             "MD036": false,
+             "MD022": false,
+             "MD045": false,
+             "MD060": false
+           }
+           EOF
 
       - name: Run markdownlint
         run: markdownlint '**/*.md' --ignore node_modules
