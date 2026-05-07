@@ -1,26 +1,28 @@
-site_name: Coo-Cah Garage & Power Electronics Factory
+site_name: Coo-Cah Metallurgical & Minerals Factory
 site_description: >
-  Blueprint, operational docs & AI-integration specifications for the Coo-Cah Garage & Power
-  Electronics Factory — Sagamu Industrial Estate, Ogun State, Nigeria.
-  Manufactures inverters, solar charge controllers, UPS, battery chargers, smart power strips,
-  and power tools. Tier 1 Critical Infrastructure for the Coo-Cah Technologies Holdings network.
-site_url: https://oumar-code.github.io/coo-cah-factory-electronics-power/
-repo_url: https://github.com/oumar-code/coo-cah-factory-electronics-power
-repo_name: oumar-code/coo-cah-factory-electronics-power
+  Blueprint, operational docs & AI-integration specifications for the Coo-Cah Metallurgical
+  & Minerals Factory — Warri / Ovwian-Aladja Steel Corridor, Delta State, Nigeria.
+  Manufactures steel sheet, aluminium rolling, copper wire rod, and lead alloys.
+  Tier 2 Strategic Manufacturing — Coo-Cah Technologies Holdings.
+site_author: Coo-Cah Technologies Holdings
+site_url: https://oumar-code.github.io/coo-cah-factory-chemicals-metallurgical/
+
+repo_name: oumar-code/coo-cah-factory-chemicals-metallurgical
+repo_url: https://github.com/oumar-code/coo-cah-factory-chemicals-metallurgical
 edit_uri: edit/main/docs/
 
 theme:
   name: material
   palette:
     - scheme: default
-      primary: deep purple
-      accent: amber
+      primary: blue grey
+      accent: deep orange
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: deep purple
-      accent: amber
+      primary: blue grey
+      accent: deep orange
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -49,8 +51,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - admonition
-  - pymdownx.arithmatex:
-      generic: true
   - footnotes
   - pymdownx.details
   - pymdownx.superfences:
@@ -64,10 +64,13 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - tables
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 nav:
-  - Home: ../README.md
-  - Master Repo Reference: ../MASTER_REPO_REF.md
+  - Home: index.md
+  - Master Repo Reference: master-repo-ref.md
   - Operations:
     - Machinery & Equipment: machinery.md
     - Floor Plan & Layout: floor-plan.md
@@ -85,12 +88,19 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/oumar-code
-  version:
-    provider: mike
+      link: https://github.com/oumar-code/Coo-Kah-Doks
+      name: Master Repository — Coo-Kah-Doks
+  analytics:
+    provider: google
+    property: ""
   master_repo: https://github.com/oumar-code/Coo-Kah-Doks
   factory_status: PLANNED
-  factory_tier: "Tier 1 — Critical Infrastructure"
-  factory_phase: Phase 1
+  factory_tier: "Tier 2 — Strategic Manufacturing"
+  factory_phase: Phase 2
 
-copyright: Copyright &copy; 2025 Coo-Cah Technologies Holdings. All rights reserved.
+extra_css:
+  - stylesheets/extra.css
+
+copyright: >
+  © 2025 Coo-Cah Technologies Holdings. All rights reserved. |
+  Part of the Coo-Cah Manufacturing Ecosystem.
