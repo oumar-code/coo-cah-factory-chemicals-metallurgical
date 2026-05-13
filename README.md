@@ -74,7 +74,6 @@ graph TD
     LEAD["Battery scrap recyclers<br>(Nigeria — lead acid scrap)"] -->|Lead scrap + ingot| MF
 ```
 
-
 ---
 
 ## Sub-Document Index
