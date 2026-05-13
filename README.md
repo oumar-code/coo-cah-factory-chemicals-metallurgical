@@ -73,3 +73,25 @@ graph TD
     LME["Import — Apapa/Tin Can Island<br>(ETP copper cathode, LME contracts)"] -->|Copper cathode| MF
     LEAD["Battery scrap recyclers<br>(Nigeria — lead acid scrap)"] -->|Lead scrap + ingot| MF
 ```
+
+---
+
+## Sub-Document Index
+
+| Document | Link | Notes |
+| --- | --- | --- |
+| Factory Overview (Docs Home) | [docs/index.md](./docs/index.md) | Main blueprint and consolidated index |
+| Implementation Plan | [implementation-plan.md](./implementation-plan.md) | Phase 2 implementation sequencing and gates |
+| Machinery & Equipment | [docs/machinery.md](./docs/machinery.md) | Core line equipment and technical specifications |
+| Floor Plan & Layout | [docs/floor-plan.md](./docs/floor-plan.md) | Site zoning, flow paths, and area allocation |
+| Energy Profile | [docs/energy-profile.md](./docs/energy-profile.md) | Load model, PV/BESS assumptions, and utility design |
+| Automation Roadmap | [docs/automation-roadmap.md](./docs/automation-roadmap.md) | DCS, MES, AI, and digital twin rollout path |
+| Supply Chain | [docs/supply-chain.md](./docs/supply-chain.md) | Upstream sourcing and downstream distribution strategy |
+| Regulatory & Certification | [docs/regulatory.md](./docs/regulatory.md) | Compliance landscape and certification requirements |
+| CAPEX & OPEX | [docs/capex-opex.md](./docs/capex-opex.md) | Capital and operating cost structure |
+| MES Integration | [docs/mes-integration.md](./docs/mes-integration.md) | ISA-95 data structure and integration model |
+| Digital Twin | [docs/digital-twin.md](./docs/digital-twin.md) | Twin architecture, simulation, and analytics scope |
+| AI Platform Status | [docs/ai-platform-status.md](./docs/ai-platform-status.md) | AI endpoint readiness and deployment status |
+| Penetration Test Scoping | [docs/pentest-scoping.md](./docs/pentest-scoping.md) | Security assessment scope, RoE, and remediation SLA |
+| Gap Closure Report | [docs/gap-closure-report.md](./docs/gap-closure-report.md) | Supplementary-doc readiness closure tracking |
+| Intra-Group Supply Coordination | [docs/intragroup-supply-coordination.md](./docs/intragroup-supply-coordination.md) | Confirmed inter-factory material commitments |

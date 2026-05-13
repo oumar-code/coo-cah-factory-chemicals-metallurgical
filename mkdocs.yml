@@ -43,7 +43,8 @@ theme:
 
 plugins:
   - search
-  - mermaid2
+  - mermaid2:
+      javascript: javascripts/mermaid.esm.min.mjs
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -84,6 +85,13 @@ nav:
   - Digital & MES:
     - Digital Twin: digital-twin.md
     - MES Integration: mes-integration.md
+
+  - Supplementary Readiness Docs:
+    - AI Platform Status: ai-platform-status.md
+    - Penetration Test Scoping: pentest-scoping.md
+    - Gap Closure Report: gap-closure-report.md
+    - Intra-Group Supply Coordination: intragroup-supply-coordination.md
+  - Implementation Plan: implementation-plan.md
 
 extra:
   social:

@@ -256,9 +256,12 @@ graph TD
 | CAPEX & OPEX | [capex-opex.md](./capex-opex.md) | Capital and operating cost structure |
 | MES Integration | [mes-integration.md](./mes-integration.md) | ISA-95 data structure and integration model |
 | Digital Twin | [digital-twin.md](./digital-twin.md) | Twin architecture, simulation, and analytics scope |
+| Implementation Plan | [implementation-plan.md](./implementation-plan.md) | Phase 2 implementation sequencing and gates |
+| AI Platform Status | [ai-platform-status.md](./ai-platform-status.md) | AI endpoint readiness and deployment status |
+| Penetration Test Scoping | [pentest-scoping.md](./pentest-scoping.md) | Security assessment scope, RoE, and remediation SLA |
+| Gap Closure Report | [gap-closure-report.md](./gap-closure-report.md) | Supplementary-doc readiness closure tracking |
+| Intra-Group Supply Coordination | [intragroup-supply-coordination.md](./intragroup-supply-coordination.md) | Confirmed inter-factory material commitments |
 | MASTER_REPO_REF | [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) | Group-level documentation master repository |
-
-Code
 
 ---
 *This document is part of the Coo-Cah Manufacturing Ecosystem documentation suite.*
