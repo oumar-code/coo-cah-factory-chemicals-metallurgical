@@ -256,6 +256,9 @@ graph TD
 | CAPEX & OPEX | [capex-opex.md](./capex-opex.md) | Capital and operating cost structure |
 | MES Integration | [mes-integration.md](./mes-integration.md) | ISA-95 data structure and integration model |
 | Digital Twin | [digital-twin.md](./digital-twin.md) | Twin architecture, simulation, and analytics scope |
+| Sensor Map | [sensor-map.md](./sensor-map.md) | Authoritative Gate 3 sensor-to-asset spatial mapping |
+| BIM Zone Boundaries | [bim/zone-boundaries.md](./bim/zone-boundaries.md) | Authoritative zone coordinate boundaries for BIM placement |
+| BIM Asset Anchors | [bim/asset-anchors.md](./bim/asset-anchors.md) | Authoritative asset coordinates and orientation for BIM |
 | Implementation Plan | [implementation-plan.md](./implementation-plan.md) | Phase 2 implementation sequencing and gates |
 | AI Platform Status | [ai-platform-status.md](./ai-platform-status.md) | AI endpoint readiness and deployment status |
 | Penetration Test Scoping | [pentest-scoping.md](./pentest-scoping.md) | Security assessment scope, RoE, and remediation SLA |
