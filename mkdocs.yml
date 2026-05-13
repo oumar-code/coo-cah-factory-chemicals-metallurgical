@@ -85,6 +85,9 @@ nav:
   - Digital & MES:
     - Digital Twin: digital-twin.md
     - MES Integration: mes-integration.md
+    - Sensor Map: sensor-map.md
+    - BIM Zone Boundaries: bim/zone-boundaries.md
+    - BIM Asset Anchors: bim/asset-anchors.md
 
   - Supplementary Readiness Docs:
     - AI Platform Status: ai-platform-status.md
