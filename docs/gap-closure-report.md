@@ -19,14 +19,14 @@ This document tracks closure of supplementary-document and integration-evidence 
 
 | Gap ID | Reported Gap | Required File or Update | Current State | Evidence |
 | --- | --- | --- | --- | --- |
-| G-MET-001 | Missing implementation plan in factory root | `implementation-plan.md` | ✅ File exists | [`../implementation-plan.md`](../implementation-plan.md) |
+| G-MET-001 | Missing implementation plan in factory root | `implementation-plan.md` | ✅ File exists | [`implementation-plan.md`](./implementation-plan.md) |
 | G-MET-002 | Missing AI platform status artifact | `docs/ai-platform-status.md` | ✅ File exists | [`ai-platform-status.md`](./ai-platform-status.md) |
 | G-MET-003 | Missing penetration test scoping artifact | `docs/pentest-scoping.md` | ✅ File exists | [`pentest-scoping.md`](./pentest-scoping.md) |
 | G-MET-004 | Missing intra-group supply coordination artifact | `docs/intragroup-supply-coordination.md` | ✅ File exists | [`intragroup-supply-coordination.md`](./intragroup-supply-coordination.md) |
 | G-MET-005 | Missing gap closure tracking artifact | `docs/gap-closure-report.md` | ✅ File exists | [`gap-closure-report.md`](./gap-closure-report.md) |
-| G-MET-006 | MkDocs nav not including supplementary docs | `mkdocs.yml` nav updates | ✅ Updated | [`../mkdocs.yml`](../mkdocs.yml) |
+| G-MET-006 | MkDocs nav not including supplementary docs | `mkdocs.yml` nav updates | ✅ Updated | `mkdocs.yml` |
 | G-MET-007 | Docs home index missing supplementary links | `docs/index.md` documentation index update | ✅ Updated | [`index.md`](./index.md) |
-| G-MET-008 | README missing supplementary sub-document links | `README.md` sub-document index update | ✅ Updated | [`../README.md`](../README.md) |
+| G-MET-008 | README missing supplementary sub-document links | `README.md` sub-document index update | ✅ Updated | `README.md` |
 
 ---
 
@@ -74,8 +74,8 @@ This document tracks closure of supplementary-document and integration-evidence 
 
 | Document | Purpose |
 | --- | --- |
-| [`../implementation-plan.md`](../implementation-plan.md) | Implementation sequencing and workstream control |
+| [`implementation-plan.md`](./implementation-plan.md) | Implementation sequencing and workstream control |
 | [`ai-platform-status.md`](./ai-platform-status.md) | AI platform endpoint readiness |
 | [`pentest-scoping.md`](./pentest-scoping.md) | Security testing scope and rules |
 | [`intragroup-supply-coordination.md`](./intragroup-supply-coordination.md) | Intra-group supply commitments |
-| [`../mkdocs.yml`](../mkdocs.yml) | Site navigation and documentation registration |
+| `mkdocs.yml` | Site navigation and documentation registration |

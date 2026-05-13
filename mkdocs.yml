@@ -43,7 +43,8 @@ theme:
 
 plugins:
   - search
-  - mermaid2
+  - mermaid2:
+      javascript: javascripts/mermaid.esm.min.mjs
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -90,7 +91,7 @@ nav:
     - Penetration Test Scoping: pentest-scoping.md
     - Gap Closure Report: gap-closure-report.md
     - Intra-Group Supply Coordination: intragroup-supply-coordination.md
-  - Implementation Plan: ../implementation-plan.md
+  - Implementation Plan: implementation-plan.md
 
 extra:
   social:
