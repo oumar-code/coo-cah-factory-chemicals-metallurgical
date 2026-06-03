@@ -1,8 +1,8 @@
 # Machinery & Equipment Register
 
-> **Factory:** Coo-Cah Garage & Power Electronics Factory — Sagamu, Ogun State
-> **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `factories/electronics/garage-power-electronics/machinery.md`
-> **Status:** PLANNED — Phase 1 equipment list; Phase 2 additions noted where applicable.
+> **Factory:** Coo-Cah Metallurgical & Minerals Factory — Warri / Ovwian-Aladja, Delta State
+> **Master Repo Ref:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks) → `factories/chemicals/metallurgical/machinery.md`
+> **Status:** PLANNED — legacy equipment detail remains under re-baselining for the metallurgical factory; header and source reference corrected in this sprint.
 
 ---
 
