@@ -96,7 +96,11 @@ nav:
     - DT Simulation Designs: dt-simulation-designs.md
     - DT Go/No-Go Checklist: dt-gonogo-checklist.md
     - DT Data Quality Scorecard: dt-data-quality-scorecard.md
-    - DT Connectivity Evidence: dt-connectivity-evidence/README.md
+    - DT Connectivity Evidence:
+        - Overview: dt-connectivity-evidence/README.md
+        - EAF Z2 Trace Pack: dt-connectivity-evidence/eaf-z2.md
+        - Wire Draw Z7 Trace Pack: dt-connectivity-evidence/wire-draw-z7.md
+        - BESS Z10 Trace Pack: dt-connectivity-evidence/bess-z10.md
 
   - Supplementary Readiness Docs:
     - AI Platform Status: ai-platform-status.md
