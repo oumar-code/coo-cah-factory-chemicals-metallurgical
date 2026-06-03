@@ -86,8 +86,21 @@ nav:
     - Digital Twin: digital-twin.md
     - MES Integration: mes-integration.md
     - Sensor Map: sensor-map.md
+    - BIM Reference Index: bim/README.md
     - BIM Zone Boundaries: bim/zone-boundaries.md
     - BIM Asset Anchors: bim/asset-anchors.md
+    - DT Evidence Index: dt-evidence-index.md
+    - DT Governance Log: dt-governance-log.md
+    - DT Live-Evidence Briefing: dt-live-evidence-briefing.md
+    - DT KPI Dictionary: dt-kpi-dictionary.md
+    - DT Simulation Designs: dt-simulation-designs.md
+    - DT Go/No-Go Checklist: dt-gonogo-checklist.md
+    - DT Data Quality Scorecard: dt-data-quality-scorecard.md
+    - DT Connectivity Evidence:
+        - Overview: dt-connectivity-evidence/README.md
+        - EAF Z2 Trace Pack: dt-connectivity-evidence/eaf-z2.md
+        - Wire Draw Z7 Trace Pack: dt-connectivity-evidence/wire-draw-z7.md
+        - BESS Z10 Trace Pack: dt-connectivity-evidence/bess-z10.md
 
   - Supplementary Readiness Docs:
     - AI Platform Status: ai-platform-status.md
