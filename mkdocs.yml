@@ -1,9 +1,8 @@
 site_name: Coo-Cah Metallurgical & Minerals Factory
 site_description: >
-  Blueprint, operational docs & AI-integration specifications for the Coo-Cah Metallurgical
-  & Minerals Factory — Warri / Ovwian-Aladja Steel Corridor, Delta State, Nigeria.
-  Manufactures steel sheet, aluminium rolling, copper wire rod, and lead alloys.
-  Tier 2 Strategic Manufacturing — Coo-Cah Technologies Holdings.
+  Blueprint, operational docs & AI-integration specifications for the Coo-Cah Metallurgical &
+  Minerals Factory (Warri / Ovwian-Aladja, Delta State, Nigeria). Tier 2 Strategic Infrastructure
+  — Coo-Cah Technologies Holdings.
 site_author: Coo-Cah Technologies Holdings
 site_url: https://oumar-code.github.io/coo-cah-factory-chemicals-metallurgical/
 
@@ -15,45 +14,45 @@ theme:
   name: material
   palette:
     - scheme: default
-      primary: blue grey
-      accent: deep orange
+      primary: deep-purple
+      accent: amber
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: blue grey
-      accent: deep orange
+      primary: deep-purple
+      accent: amber
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   features:
     - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
-    - navigation.path
     - navigation.top
     - search.suggest
     - search.highlight
-    - content.tabs.link
-    - content.code.annotation
     - content.code.copy
+    - content.tabs.link
   icon:
     repo: fontawesome/brands/github
 
 plugins:
   - search
-  - mermaid2:
-      javascript: javascripts/mermaid.esm.min.mjs
+  - mermaid2
 
 markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - admonition
-  - footnotes
-  - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -61,69 +60,28 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.mark
-  - attr_list
-  - md_in_html
-  - tables
-  - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
 
 nav:
   - Home: index.md
   - Master Repo Reference: master-repo-ref.md
-  - Operations:
+  - Factory Docs:
     - Machinery & Equipment: machinery.md
-    - Floor Plan & Layout: floor-plan.md
     - Energy Profile: energy-profile.md
-  - Strategy & Roadmap:
+    - Floor Plan & Layout: floor-plan.md
     - Automation Roadmap: automation-roadmap.md
     - Supply Chain: supply-chain.md
-    - CapEx & OpEx: capex-opex.md
-  - Compliance & Regulatory:
-    - Regulatory & Certification: regulatory.md
-  - Digital & MES:
+    - Regulatory & Compliance: regulatory.md
+    - CapEx / OpEx: capex-opex.md
     - Digital Twin: digital-twin.md
     - MES Integration: mes-integration.md
-    - Sensor Map: sensor-map.md
-    - BIM Reference Index: bim/README.md
-    - BIM Zone Boundaries: bim/zone-boundaries.md
-    - BIM Asset Anchors: bim/asset-anchors.md
-    - DT Evidence Index: dt-evidence-index.md
-    - DT Governance Log: dt-governance-log.md
-    - DT Live-Evidence Briefing: dt-live-evidence-briefing.md
-    - DT KPI Dictionary: dt-kpi-dictionary.md
-    - DT Simulation Designs: dt-simulation-designs.md
-    - DT Go/No-Go Checklist: dt-gonogo-checklist.md
-    - DT Data Quality Scorecard: dt-data-quality-scorecard.md
-    - DT Connectivity Evidence:
-        - Overview: dt-connectivity-evidence/README.md
-        - EAF Z2 Trace Pack: dt-connectivity-evidence/eaf-z2.md
-        - Wire Draw Z7 Trace Pack: dt-connectivity-evidence/wire-draw-z7.md
-        - BESS Z10 Trace Pack: dt-connectivity-evidence/bess-z10.md
-
-  - Supplementary Readiness Docs:
-    - AI Platform Status: ai-platform-status.md
-    - Penetration Test Scoping: pentest-scoping.md
-    - Gap Closure Report: gap-closure-report.md
-    - Intra-Group Supply Coordination: intragroup-supply-coordination.md
-  - Implementation Plan: implementation-plan.md
 
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/oumar-code/Coo-Kah-Doks
       name: Master Repository — Coo-Kah-Doks
-  analytics:
-    provider: google
-    property: ""
-  master_repo: https://github.com/oumar-code/Coo-Kah-Doks
-  factory_status: PLANNED
-  factory_tier: "Tier 2 — Strategic Manufacturing"
-  factory_phase: Phase 2
-
-extra_css:
-  - stylesheets/extra.css
 
 copyright: >
   © 2025 Coo-Cah Technologies Holdings. All rights reserved. |
